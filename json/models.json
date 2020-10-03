@@ -1,0 +1,1834 @@
+{
+  "models": {
+    "32F4": {
+      "category": "eos",
+      "method": "email",
+      "auto_upload": "true",
+      "model_top": "camera.html?model=32F4",
+      "connect_guide": "camera-email-d.html",
+      "upload_guide": "auto-upload.html",
+      "name_by_region": {
+        "0": "EOS R5",
+        "1": "EOS R5",
+        "2": "EOS R5",
+        "3": "EOS R5",
+        "4": "EOS R5",
+        "5": "EOS R5",
+        "6": "EOS R5",
+        "7": "EOS R5"
+      }
+    },
+    "32F5": {
+      "category": "eos",
+      "method": "email",
+      "auto_upload": "true",
+      "model_top": "camera.html?model=32F5",
+      "connect_guide": "camera-email-d.html",
+      "upload_guide": "auto-upload.html",
+      "name_by_region": {
+        "0": "EOS R6",
+        "1": "EOS R6",
+        "2": "EOS R6",
+        "3": "EOS R6",
+        "4": "EOS R6",
+        "5": "EOS R6",
+        "6": "EOS R6",
+        "7": "EOS R6"
+      }
+    },
+    "CS100": {
+      "category": "",
+      "method": "none",
+      "connect_guide": "index.html",
+      "upload_guide": "index.html",
+      "name_by_region": {
+        "0": "Connect Station CS100",
+        "1": "Connect Station CS100",
+        "2": "Connect Station CS100",
+        "3": "Connect Station CS100",
+        "4": "Connect Station CS100",
+        "5": "Connect Station CS100",
+        "6": "Connect Station CS100",
+        "7": "Connect Station CS100"
+      }
+    },
+    "3233": {
+      "category": "eos",
+      "method": "none",
+      "connect_guide": "none",
+      "upload_guide": "none",
+      "name_by_region": {
+        "0": "PowerShot G1 X",
+        "1": "PowerShot G1 X",
+        "2": "PowerShot G1 X",
+        "3": "PowerShot G1 X",
+        "4": "PowerShot G1 X",
+        "5": "PowerShot G1 X",
+        "6": "PowerShot G1 X",
+        "7": "PowerShot G1 X"
+      }
+    },
+    "3240": {
+      "category": "compact",
+      "method": "none",
+      "connect_guide": "none",
+      "upload_guide": "none",
+      "name_by_region": {
+        "0": "IXY 420F",
+        "1": "PowerShot ELPH 320 HS",
+        "2": "PowerShot ELPH 320 HS",
+        "3": "IXUS 240 HS",
+        "4": "IXUS 240 HS",
+        "5": "IXUS 240 HS",
+        "6": "IXUS 240 HS",
+        "7": "IXUS 240 HS"
+      }
+    },
+    "3242": {
+      "category": "compact",
+      "method": "none",
+      "connect_guide": "none",
+      "upload_guide": "none",
+      "name_by_region": {
+        "0": "PowerShot D20",
+        "1": "PowerShot D20",
+        "2": "PowerShot D20",
+        "3": "PowerShot D20",
+        "4": "PowerShot D20",
+        "5": "PowerShot D20",
+        "6": "PowerShot D20",
+        "7": "PowerShot D20"
+      }
+    },
+    "3244": {
+      "category": "compact",
+      "method": "none",
+      "connect_guide": "none",
+      "upload_guide": "none",
+      "name_by_region": {
+        "0": "PowerShot SX260 HS",
+        "1": "PowerShot SX260 HS",
+        "2": "PowerShot SX260 HS",
+        "3": "PowerShot SX260 HS",
+        "4": "PowerShot SX260 HS",
+        "5": "PowerShot SX260 HS",
+        "6": "PowerShot SX260 HS",
+        "7": "PowerShot SX260 HS"
+      }
+    },
+    "3246": {
+      "category": "compact",
+      "method": "none",
+      "connect_guide": "none",
+      "upload_guide": "none",
+      "name_by_region": {
+        "0": "IXY 1",
+        "1": "PowerShot ELPH 530 HS",
+        "2": "PowerShot ELPH 530 HS",
+        "3": "IXUS 510 HS",
+        "4": "IXUS 510 HS",
+        "5": "IXUS 510 HS",
+        "6": "IXUS 510 HS",
+        "7": "IXUS 510 HS"
+      }
+    },
+    "3247": {
+      "category": "compact",
+      "method": "none",
+      "connect_guide": "none",
+      "upload_guide": "none",
+      "name_by_region": {
+        "0": "IXY 3",
+        "1": "PowerShot ELPH 520 HS",
+        "2": "PowerShot ELPH 520 HS",
+        "3": "IXUS 500 HS",
+        "4": "IXUS 500 HS",
+        "5": "IXUS 500 HS",
+        "6": "IXUS 500 HS",
+        "7": "IXUS 500 HS"
+      }
+    },
+    "3258": {
+      "category": "compact",
+      "method": "none",
+      "connect_guide": "none",
+      "upload_guide": "none",
+      "name_by_region": {
+        "0": "PowerShot G15",
+        "1": "PowerShot G15",
+        "2": "PowerShot G15",
+        "3": "PowerShot G15",
+        "4": "PowerShot G15",
+        "5": "PowerShot G15",
+        "6": "PowerShot G15",
+        "7": "PowerShot G15"
+      }
+    },
+    "325A": {
+      "category": "compact",
+      "method": "none",
+      "connect_guide": "none",
+      "upload_guide": "none",
+      "name_by_region": {
+        "0": "PowerShot SX160 IS",
+        "1": "PowerShot SX160 IS",
+        "2": "PowerShot SX160 IS",
+        "3": "PowerShot SX160 IS",
+        "4": "PowerShot SX160 IS",
+        "5": "PowerShot SX160 IS",
+        "6": "PowerShot SX160 IS",
+        "7": "PowerShot SX160 IS"
+      }
+    },
+    "325B": {
+      "category": "compact",
+      "method": "none",
+      "connect_guide": "none",
+      "upload_guide": "none",
+      "name_by_region": {
+        "0": "PowerShot S110",
+        "1": "PowerShot S110",
+        "2": "PowerShot S110",
+        "3": "PowerShot S110",
+        "4": "PowerShot S110",
+        "5": "PowerShot S110",
+        "6": "PowerShot S110",
+        "7": "PowerShot S110"
+      }
+    },
+    "325C": {
+      "category": "compact",
+      "method": "none",
+      "connect_guide": "none",
+      "upload_guide": "none",
+      "name_by_region": {
+        "0": "PowerShot SX500 IS",
+        "1": "PowerShot SX500 IS",
+        "2": "PowerShot SX500 IS",
+        "3": "PowerShot SX500 IS",
+        "4": "PowerShot SX500 IS",
+        "5": "PowerShot SX500 IS",
+        "6": "PowerShot SX500 IS",
+        "7": "PowerShot SX500 IS"
+      }
+    },
+    "325E": {
+      "category": "compact",
+      "method": "none",
+      "connect_guide": "none",
+      "upload_guide": "none",
+      "name_by_region": {
+        "0": "PowerShot N",
+        "1": "PowerShot N",
+        "2": "PowerShot N",
+        "3": "PowerShot N",
+        "4": "PowerShot N",
+        "5": "PowerShot N",
+        "6": "PowerShot N",
+        "7": "PowerShot N"
+      }
+    },
+    "325D": {
+      "category": "compact",
+      "method": "none",
+      "connect_guide": "none",
+      "upload_guide": "none",
+      "name_by_region": {
+        "0": "IXY 430F",
+        "3": "IXUS 245 HS",
+        "4": "IXUS 245 HS",
+        "5": "IXUS 245 HS",
+        "6": "IXUS 245 HS",
+        "7": "IXUS 245 HS"
+      }
+    },
+    "325F": {
+      "category": "compact",
+      "method": "none",
+      "connect_guide": "none",
+      "upload_guide": "none",
+      "name_by_region": {
+        "0": "PowerShot SX280 HS",
+        "1": "PowerShot SX280 HS",
+        "2": "PowerShot SX280 HS",
+        "3": "PowerShot SX280 HS",
+        "4": "PowerShot SX280 HS",
+        "5": "PowerShot SX280 HS",
+        "6": "PowerShot SX280 HS",
+        "7": "PowerShot SX280 HS"
+      }
+    },
+    "3261": {
+      "category": "compact",
+      "method": "none",
+      "connect_guide": "none",
+      "upload_guide": "none",
+      "name_by_region": {
+        "0": "PowerShot A3500 IS",
+        "1": "PowerShot A3500 IS",
+        "2": "PowerShot A3500 IS",
+        "3": "PowerShot A3500 IS",
+        "4": "PowerShot A3500 IS",
+        "5": "PowerShot A3500 IS",
+        "6": "PowerShot A3500 IS",
+        "7": "PowerShot A3500 IS"
+      }
+    },
+    "3265": {
+      "category": "compact",
+      "method": "none",
+      "connect_guide": "none",
+      "upload_guide": "none",
+      "name_by_region": {
+        "0": "IXY 110F",
+        "1": "PowerShot ELPH 130 IS",
+        "2": "PowerShot ELPH 130 IS",
+        "3": "IXUS 140",
+        "4": "IXUS 140",
+        "5": "IXUS 140",
+        "6": "IXUS 140",
+        "7": "IXUS 140"
+      }
+    },
+    "3266": {
+      "category": "compact",
+      "method": "none",
+      "connect_guide": "none",
+      "upload_guide": "none",
+      "name_by_region": {
+        "0": "IXY 100F",
+        "1": "PowerShot ELPH 120 IS",
+        "2": "PowerShot ELPH 120 IS",
+        "3": "IXUS 135",
+        "4": "IXUS 135",
+        "5": "IXUS 135",
+        "6": "IXUS 135",
+        "7": "IXUS 135"
+      }
+    },
+    "327D": {
+      "category": "compact",
+      "method": "none",
+      "connect_guide": "none",
+      "upload_guide": "none",
+      "name_by_region": {
+        "0": "IXY 90F",
+        "1": "PowerShot ELPH 115 IS",
+        "2": "PowerShot ELPH 115 IS",
+        "3": "IXUS 132",
+        "4": "IXUS 132",
+        "5": "IXUS 132",
+        "6": "IXUS 132",
+        "7": "IXUS 132"
+      }
+    },
+    "3268": {
+      "category": "compact",
+      "method": "none",
+      "connect_guide": "none",
+      "upload_guide": "none",
+      "name_by_region": {
+        "0": "IXY 610F",
+        "1": "PowerShot ELPH 330 HS",
+        "2": "PowerShot ELPH 330 HS",
+        "3": "IXUS 255 HS",
+        "4": "IXUS 255 HS",
+        "5": "IXUS 255 HS",
+        "6": "IXUS 255 HS",
+        "7": "IXUS 255 HS"
+      }
+    },
+    "3274": {
+      "category": "compact",
+      "method": "none",
+      "connect_guide": "none",
+      "upload_guide": "none",
+      "name_by_region": {
+        "0": "PowerShot G16",
+        "1": "PowerShot G16",
+        "2": "PowerShot G16",
+        "3": "PowerShot G16",
+        "4": "PowerShot G16",
+        "5": "PowerShot G16",
+        "6": "PowerShot G16",
+        "7": "PowerShot G16"
+      }
+    },
+    "3275": {
+      "category": "compact",
+      "method": "none",
+      "connect_guide": "none",
+      "upload_guide": "none",
+      "name_by_region": {
+        "0": "PowerShot S120",
+        "1": "PowerShot S120",
+        "2": "PowerShot S120",
+        "3": "PowerShot S120",
+        "4": "PowerShot S120",
+        "5": "PowerShot S120",
+        "6": "PowerShot S120",
+        "7": "PowerShot S120"
+      }
+    },
+    "3276": {
+      "category": "compact",
+      "method": "none",
+      "connect_guide": "none",
+      "upload_guide": "none",
+      "name_by_region": {
+        "0": "PowerShot SX170 IS",
+        "1": "PowerShot SX170 IS",
+        "2": "PowerShot SX170 IS",
+        "3": "PowerShot SX170 IS",
+        "4": "PowerShot SX170 IS",
+        "5": "PowerShot SX170 IS",
+        "6": "PowerShot SX170 IS",
+        "7": "PowerShot SX170 IS"
+      }
+    },
+    "3277": {
+      "category": "compact",
+      "method": "none",
+      "connect_guide": "none",
+      "upload_guide": "none",
+      "name_by_region": {
+        "0": "PowerShot SX510 HS",
+        "1": "PowerShot SX510 HS",
+        "2": "PowerShot SX510 HS",
+        "3": "PowerShot SX510 HS",
+        "4": "PowerShot SX510 HS",
+        "5": "PowerShot SX510 HS",
+        "6": "PowerShot SX510 HS",
+        "7": "PowerShot SX510 HS"
+      }
+    },
+    "3278": {
+      "category": "compact",
+      "method": "none",
+      "connect_guide": "none",
+      "upload_guide": "none",
+      "name_by_region": {
+        "0": "PowerShot S200",
+        "1": "PowerShot S200",
+        "2": "PowerShot S200",
+        "3": "PowerShot S200",
+        "4": "PowerShot S200",
+        "5": "PowerShot S200",
+        "6": "PowerShot S200",
+        "7": "PowerShot S200"
+      }
+    },
+    "3279": {
+      "category": "compact",
+      "method": "none",
+      "connect_guide": "none",
+      "upload_guide": "none",
+      "name_by_region": {
+        "0": "IXY 620F"
+      }
+    },
+    "3282": {
+      "category": "compact",
+      "method": "none",
+      "connect_guide": "none",
+      "upload_guide": "none",
+      "name_by_region": {
+        "0": "PowerShot N100",
+        "1": "PowerShot N100",
+        "2": "PowerShot N100",
+        "3": "PowerShot N100",
+        "4": "PowerShot N100",
+        "5": "PowerShot N100",
+        "6": "PowerShot N100",
+        "7": "PowerShot N100"
+      }
+    },
+    "3283": {
+      "category": "compact",
+      "method": "authcode",
+      "model_top": "camera.html?model=3283",
+      "connect_guide": "camera-authcode.html",
+      "upload_guide": "cloud-sync-upload.html",
+      "name_by_region": {
+        "0": "PowerShot G1 X Mark II",
+        "1": "PowerShot G1 X Mark II",
+        "2": "PowerShot G1 X Mark II",
+        "3": "PowerShot G1 X Mark II",
+        "4": "PowerShot G1 X Mark II",
+        "5": "PowerShot G1 X Mark II",
+        "6": "PowerShot G1 X Mark II",
+        "7": "PowerShot G1 X Mark II"
+      }
+    },
+    "3284": {
+      "category": "compact",
+      "method": "none",
+      "connect_guide": "none",
+      "upload_guide": "none",
+      "name_by_region": {
+        "0": "PowerShot D30",
+        "1": "PowerShot D30",
+        "2": "PowerShot D30",
+        "3": "PowerShot D30",
+        "4": "PowerShot D30",
+        "5": "PowerShot D30",
+        "6": "PowerShot D30",
+        "7": "PowerShot D30"
+      }
+    },
+    "3285": {
+      "category": "compact",
+      "method": "none",
+      "connect_guide": "none",
+      "upload_guide": "none",
+      "name_by_region": {
+        "0": "PowerShot SX700 HS",
+        "1": "PowerShot SX700 HS",
+        "2": "PowerShot SX700 HS",
+        "3": "PowerShot SX700 HS",
+        "4": "PowerShot SX700 HS",
+        "5": "PowerShot SX700 HS",
+        "6": "PowerShot SX700 HS",
+        "7": "PowerShot SX700 HS"
+      }
+    },
+    "3286": {
+      "category": "compact",
+      "method": "none",
+      "connect_guide": "none",
+      "upload_guide": "none",
+      "name_by_region": {
+        "0": "PowerShot SX600 HS",
+        "1": "PowerShot SX600 HS",
+        "2": "PowerShot SX600 HS",
+        "3": "PowerShot SX600 HS",
+        "4": "PowerShot SX600 HS",
+        "5": "PowerShot SX600 HS",
+        "6": "PowerShot SX600 HS",
+        "7": "PowerShot SX600 HS"
+      }
+    },
+    "3287": {
+      "category": "compact",
+      "method": "none",
+      "connect_guide": "none",
+      "upload_guide": "none",
+      "name_by_region": {
+        "0": "IXY 130",
+        "1": "PowerShot ELPH 140 IS",
+        "2": "PowerShot ELPH 140 IS",
+        "3": "IXUS 150",
+        "4": "IXUS 150",
+        "5": "IXUS 150",
+        "6": "IXUS 150",
+        "7": "IXUS 150"
+      }
+    },
+    "3288": {
+      "category": "compact",
+      "method": "none",
+      "connect_guide": "none",
+      "upload_guide": "none",
+      "name_by_region": {
+        "0": "IXY 120",
+        "1": "PowerShot ELPH 135",
+        "2": "PowerShot ELPH 135",
+        "3": "IXUS 145",
+        "4": "IXUS 145",
+        "5": "IXUS 145",
+        "6": "IXUS 145",
+        "7": "IXUS 145"
+      }
+    },
+    "3289": {
+      "category": "compact",
+      "method": "none",
+      "connect_guide": "none",
+      "upload_guide": "none",
+      "name_by_region": {
+        "0": "IXY 630",
+        "1": "PowerShot ELPH 340 HS",
+        "2": "PowerShot ELPH 340 HS",
+        "3": "IXUS 265 HS",
+        "4": "IXUS 265 HS",
+        "5": "IXUS 265 HS",
+        "6": "IXUS 265 HS",
+        "7": "IXUS 265 HS"
+      }
+    },
+    "328A": {
+      "category": "compact",
+      "method": "none",
+      "connect_guide": "none",
+      "upload_guide": "none",
+      "name_by_region": {
+        "0": "IXY 140",
+        "1": "PowerShot ELPH 150 IS",
+        "2": "PowerShot ELPH 150 IS",
+        "3": "IXUS 155",
+        "4": "IXUS 155",
+        "5": "IXUS 155",
+        "6": "IXUS 155",
+        "7": "IXUS 155"
+      }
+    },
+    "3299": {
+      "category": "eos",
+      "method": "none",
+      "connect_guide": "none",
+      "upload_guide": "none",
+      "name_by_region": {
+        "0": "EOS M3",
+        "1": "EOS M3",
+        "2": "EOS M3",
+        "3": "EOS M3",
+        "4": "EOS M3",
+        "5": "EOS M3",
+        "6": "EOS M3",
+        "7": "EOS M3"
+      }
+    },
+    "329A": {
+      "category": "compact",
+      "method": "none",
+      "connect_guide": "none",
+      "upload_guide": "none",
+      "name_by_region": {
+        "0": "PowerShot SX60 HS",
+        "1": "PowerShot SX60 HS",
+        "2": "PowerShot SX60 HS",
+        "3": "PowerShot SX60 HS",
+        "4": "PowerShot SX60 HS",
+        "5": "PowerShot SX60 HS",
+        "6": "PowerShot SX60 HS",
+        "7": "PowerShot SX60 HS"
+      }
+    },
+    "329C": {
+      "category": "compact",
+      "method": "none",
+      "connect_guide": "none",
+      "upload_guide": "none",
+      "name_by_region": {
+        "0": "PowerShot SX400 IS",
+        "1": "PowerShot SX400 IS",
+        "2": "PowerShot SX400 IS",
+        "3": "PowerShot SX400 IS",
+        "4": "PowerShot SX400 IS",
+        "5": "PowerShot SX400 IS",
+        "6": "PowerShot SX400 IS",
+        "7": "PowerShot SX400 IS"
+      }
+    },
+    "329D": {
+      "category": "compact",
+      "method": "none",
+      "connect_guide": "none",
+      "upload_guide": "none",
+      "name_by_region": {
+        "0": "PowerShot G7 X",
+        "1": "PowerShot G7 X",
+        "2": "PowerShot G7 X",
+        "3": "PowerShot G7 X",
+        "4": "PowerShot G7 X",
+        "5": "PowerShot G7 X",
+        "6": "PowerShot G7 X",
+        "7": "PowerShot G7 X"
+      }
+    },
+    "329E": {
+      "category": "compact",
+      "method": "none",
+      "connect_guide": "none",
+      "upload_guide": "none",
+      "name_by_region": {
+        "0": "PowerShot N2",
+        "1": "PowerShot N2",
+        "2": "PowerShot N2",
+        "3": "PowerShot N2",
+        "4": "PowerShot N2",
+        "5": "PowerShot N2",
+        "6": "PowerShot N2",
+        "7": "PowerShot N2"
+      }
+    },
+    "329F": {
+      "category": "compact",
+      "method": "authcode",
+      "model_top": "camera.html?model=329F",
+      "connect_guide": "camera-authcode.html",
+      "upload_guide": "cloud-sync-upload.html",
+      "name_by_region": {
+        "0": "PowerShot SX530 HS",
+        "1": "PowerShot SX530 HS",
+        "2": "PowerShot SX530 HS",
+        "3": "PowerShot SX530 HS",
+        "4": "PowerShot SX530 HS",
+        "5": "PowerShot SX530 HS",
+        "6": "PowerShot SX530 HS",
+        "7": "PowerShot SX530 HS"
+      }
+    },
+    "32A6": {
+      "category": "compact",
+      "method": "none",
+      "connect_guide": "none",
+      "upload_guide": "none",
+      "name_by_region": {
+        "0": "PowerShot SX710 HS",
+        "1": "PowerShot SX710 HS",
+        "2": "PowerShot SX710 HS",
+        "3": "PowerShot SX710 HS",
+        "4": "PowerShot SX710 HS",
+        "5": "PowerShot SX710 HS",
+        "6": "PowerShot SX710 HS",
+        "7": "PowerShot SX710 HS"
+      }
+    },
+    "32A7": {
+      "category": "compact",
+      "method": "none",
+      "connect_guide": "none",
+      "upload_guide": "none",
+      "name_by_region": {
+        "0": "PowerShot SX610 HS",
+        "1": "PowerShot SX610 HS",
+        "2": "PowerShot SX610 HS",
+        "3": "PowerShot SX610 HS",
+        "4": "PowerShot SX610 HS",
+        "5": "PowerShot SX610 HS",
+        "6": "PowerShot SX610 HS",
+        "7": "PowerShot SX610 HS"
+      }
+    },
+    "32A0": {
+      "category": "eos",
+      "method": "none",
+      "connect_guide": "none",
+      "upload_guide": "none",
+      "name_by_region": {
+        "0": "EOS M10",
+        "1": "EOS M10",
+        "2": "EOS M10",
+        "3": "EOS M10",
+        "4": "EOS M10",
+        "5": "EOS M10",
+        "6": "EOS M10",
+        "7": "EOS M10"
+      }
+    },
+    "32A8": {
+      "category": "compact",
+      "method": "authcode",
+      "model_top": "camera.html?model=32A8",
+      "connect_guide": "camera-authcode.html",
+      "upload_guide": "cloud-sync-upload.html",
+      "name_by_region": {
+        "0": "PowerShot G3 X",
+        "1": "PowerShot G3 X",
+        "2": "PowerShot G3 X",
+        "3": "PowerShot G3 X",
+        "4": "PowerShot G3 X",
+        "5": "PowerShot G3 X",
+        "6": "PowerShot G3 X",
+        "7": "PowerShot G3 X"
+      }
+    },
+    "32A9": {
+      "category": "compact",
+      "method": "none",
+      "connect_guide": "none",
+      "upload_guide": "none",
+      "name_by_region": {
+        "0": "IXY 160",
+        "1": "PowerShot ELPH 165 IS",
+        "2": "PowerShot ELPH 165 IS",
+        "3": "IXUS 165",
+        "4": "IXUS 165",
+        "5": "IXUS 165",
+        "6": "IXUS 165",
+        "7": "IXUS 165"
+      }
+    },
+    "32AA": {
+      "category": "compact",
+      "method": "none",
+      "connect_guide": "none",
+      "upload_guide": "none",
+      "name_by_region": {
+        "0": "IXY 150",
+        "1": "PowerShot ELPH 160",
+        "2": "PowerShot ELPH 160",
+        "3": "IXUS 160",
+        "4": "IXUS 160",
+        "5": "IXUS 160",
+        "6": "IXUS 160",
+        "7": "IXUS 160"
+      }
+    },
+    "32AB": {
+      "category": "compact",
+      "method": "none",
+      "connect_guide": "none",
+      "upload_guide": "none",
+      "name_by_region": {
+        "0": "IXY 640",
+        "1": "PowerShot ELPH 350 HS",
+        "2": "PowerShot ELPH 350 HS",
+        "3": "IXUS 275 HS",
+        "4": "IXUS 275 HS",
+        "5": "IXUS 275 HS",
+        "6": "IXUS 275 HS",
+        "7": "IXUS 275 HS"
+      }
+    },
+    "32AC": {
+      "category": "compact",
+      "method": "none",
+      "connect_guide": "none",
+      "upload_guide": "none",
+      "name_by_region": {
+        "0": "IXY 170",
+        "1": "PowerShot ELPH 170 IS",
+        "2": "PowerShot ELPH 170 IS",
+        "3": "IXUS 170",
+        "4": "IXUS 170",
+        "5": "IXUS 170",
+        "6": "IXUS 170",
+        "7": "IXUS 170"
+      }
+    },
+    "32AD": {
+      "category": "compact",
+      "method": "none",
+      "connect_guide": "none",
+      "upload_guide": "none",
+      "name_by_region": {
+        "0": "PowerShot SX410 IS",
+        "1": "PowerShot SX410 IS",
+        "2": "PowerShot SX410 IS",
+        "3": "PowerShot SX410 IS",
+        "4": "PowerShot SX410 IS",
+        "5": "PowerShot SX410 IS",
+        "6": "PowerShot SX410 IS",
+        "7": "PowerShot SX410 IS"
+      }
+    },
+    "32B1": {
+      "category": "other",
+      "method": "none",
+      "connect_guide": "none",
+      "upload_guide": "none",
+      "name_by_region": {
+        "0": "SELPHY CP1200",
+        "1": "SELPHY CP1200",
+        "2": "SELPHY CP1200",
+        "3": "SELPHY CP1200",
+        "4": "SELPHY CP1200",
+        "5": "SELPHY CP1200",
+        "6": "SELPHY CP1200",
+        "7": "SELPHY CP1200"
+      }
+    },
+    "32B2": {
+      "category": "compact",
+      "method": "none",
+      "connect_guide": "none",
+      "upload_guide": "none",
+      "name_by_region": {
+        "0": "PowerShot G9 X",
+        "1": "PowerShot G9 X",
+        "2": "PowerShot G9 X",
+        "3": "PowerShot G9 X",
+        "4": "PowerShot G9 X",
+        "5": "PowerShot G9 X",
+        "6": "PowerShot G9 X",
+        "7": "PowerShot G9 X"
+      }
+    },
+    "32BB": {
+      "category": "eos",
+      "method": "email",
+      "model_top": "camera.html?model=32BB",
+      "connect_guide": "camera-email-a.html",
+      "upload_guide": "cloud-sync-upload.html",
+      "name_by_region": {
+        "0": "EOS M5",
+        "1": "EOS M5",
+        "2": "EOS M5",
+        "3": "EOS M5",
+        "4": "EOS M5",
+        "5": "EOS M5",
+        "6": "EOS M5",
+        "7": "EOS M5"
+      }
+    },
+    "32B3": {
+      "category": "compact",
+      "method": "email",
+      "model_top": "camera.html?model=32B3",
+      "connect_guide": "camera-email-a.html",
+      "upload_guide": "cloud-sync-upload.html",
+      "name_by_region": {
+        "0": "PowerShot G5 X",
+        "1": "PowerShot G5 X",
+        "2": "PowerShot G5 X",
+        "3": "PowerShot G5 X",
+        "4": "PowerShot G5 X",
+        "5": "PowerShot G5 X",
+        "6": "PowerShot G5 X",
+        "7": "PowerShot G5 X"
+      }
+    },
+    "32BC": {
+      "category": "compact",
+      "method": "email",
+      "model_top": "camera.html?model=32BC",
+      "connect_guide": "camera-email-a.html",
+      "upload_guide": "cloud-sync-upload.html",
+      "name_by_region": {
+        "0": "PowerShot G7 X Mark II",
+        "1": "PowerShot G7 X Mark II",
+        "2": "PowerShot G7 X Mark II",
+        "3": "PowerShot G7 X Mark II",
+        "4": "PowerShot G7 X Mark II",
+        "5": "PowerShot G7 X Mark II",
+        "6": "PowerShot G7 X Mark II",
+        "7": "PowerShot G7 X Mark II"
+      }
+    },
+    "32D1": {
+      "category": "eos",
+      "method": "email",
+      "model_top": "camera.html?model=32D1",
+      "connect_guide": "camera-email-a.html",
+      "upload_guide": "cloud-sync-upload.html",
+      "name_by_region": {
+        "0": "EOS M100",
+        "1": "EOS M100",
+        "2": "EOS M100",
+        "3": "EOS M100",
+        "4": "EOS M100",
+        "5": "EOS M100",
+        "6": "EOS M100",
+        "7": "EOS M100"
+      }
+    },
+    "32BD": {
+      "category": "compact",
+      "method": "email",
+      "model_top": "camera.html?model=32BD",
+      "connect_guide": "camera-email-a.html",
+      "upload_guide": "cloud-sync-upload.html",
+      "name_by_region": {
+        "0": "IXY 650",
+        "1": "PowerShot ELPH 360 HS",
+        "2": "PowerShot ELPH 360 HS",
+        "3": "IXUS 285 HS",
+        "4": "IXUS 285 HS",
+        "5": "IXUS 285 HS",
+        "6": "IXUS 285 HS",
+        "7": "IXUS 285 HS"
+      }
+    },
+    "32BE": {
+      "category": "compact",
+      "method": "email",
+      "model_top": "camera.html?model=32BE",
+      "connect_guide": "camera-email-a.html",
+      "upload_guide": "cloud-sync-upload.html",
+      "name_by_region": {
+        "0": "PowerShot SX540 HS",
+        "1": "PowerShot SX540 HS",
+        "2": "PowerShot SX540 HS",
+        "3": "PowerShot SX540 HS",
+        "4": "PowerShot SX540 HS",
+        "5": "PowerShot SX540 HS",
+        "6": "PowerShot SX540 HS",
+        "7": "PowerShot SX540 HS"
+      }
+    },
+    "32BF": {
+      "category": "compact",
+      "method": "email",
+      "model_top": "camera.html?model=32BF",
+      "connect_guide": "camera-email-a.html",
+      "upload_guide": "cloud-sync-upload.html",
+      "name_by_region": {
+        "0": "PowerShot SX420 IS",
+        "1": "PowerShot SX420 IS",
+        "2": "PowerShot SX420 IS",
+        "3": "PowerShot SX420 IS",
+        "4": "PowerShot SX420 IS",
+        "5": "PowerShot SX420 IS",
+        "6": "PowerShot SX420 IS",
+        "7": "PowerShot SX420 IS"
+      }
+    },
+    "32C0": {
+      "category": "compact",
+      "method": "email",
+      "model_top": "camera.html?model=32C0",
+      "connect_guide": "camera-email-a.html",
+      "upload_guide": "cloud-sync-upload.html",
+      "name_by_region": {
+        "0": "IXY 190",
+        "1": "PowerShot ELPH 190 IS",
+        "2": "PowerShot ELPH 190 IS",
+        "3": "IXUS 180",
+        "4": "IXUS 180",
+        "5": "IXUS 180",
+        "6": "IXUS 180",
+        "7": "IXUS 180"
+      }
+    },
+    "32C1": {
+      "category": "compact",
+      "method": "none",
+      "connect_guide": "none",
+      "upload_guide": "none",
+      "name_by_region": {
+        "0": "IXY 180",
+        "1": "PowerShot ELPH 180",
+        "2": "PowerShot ELPH 180",
+        "3": "IXUS 175",
+        "4": "IXUS 175",
+        "5": "IXUS 175",
+        "6": "IXUS 175",
+        "7": "IXUS 175"
+      }
+    },
+    "32C2": {
+      "category": "compact",
+      "method": "email",
+      "model_top": "camera.html?model=32C2",
+      "connect_guide": "camera-email-a.html",
+      "upload_guide": "cloud-sync-upload.html",
+      "name_by_region": {
+        "0": "PowerShot SX720 HS",
+        "1": "PowerShot SX720 HS",
+        "2": "PowerShot SX720 HS",
+        "3": "PowerShot SX720 HS",
+        "4": "PowerShot SX720 HS",
+        "5": "PowerShot SX720 HS",
+        "6": "PowerShot SX720 HS",
+        "7": "PowerShot SX720 HS"
+      }
+    },
+    "32C3": {
+      "category": "compact",
+      "method": "email",
+      "model_top": "camera.html?model=32C3",
+      "connect_guide": "camera-email-a.html",
+      "upload_guide": "cloud-sync-upload.html",
+      "name_by_region": {
+        "0": "PowerShot SX620 HS",
+        "1": "PowerShot SX620 HS",
+        "2": "PowerShot SX620 HS",
+        "3": "PowerShot SX620 HS",
+        "4": "PowerShot SX620 HS",
+        "5": "PowerShot SX620 HS",
+        "6": "PowerShot SX620 HS",
+        "7": "PowerShot SX620 HS"
+      }
+    },
+    "32C5": {
+      "category": "eos",
+      "method": "email",
+      "model_top": "camera.html?model=32C5",
+      "connect_guide": "camera-email-a.html",
+      "upload_guide": "cloud-sync-upload.html",
+      "name_by_region": {
+        "0": "EOS M6",
+        "1": "EOS M6",
+        "2": "EOS M6",
+        "3": "EOS M6",
+        "4": "EOS M6",
+        "5": "EOS M6",
+        "6": "EOS M6",
+        "7": "EOS M6"
+      }
+    },
+    "32C7": {
+      "category": "compact",
+      "method": "email",
+      "model_top": "camera.html?model=32C7",
+      "connect_guide": "camera-email-a.html",
+      "upload_guide": "cloud-sync-upload.html",
+      "name_by_region": {
+        "0": "PowerShot G9 X Mark II",
+        "1": "PowerShot G9 X Mark II",
+        "2": "PowerShot G9 X Mark II",
+        "3": "PowerShot G9 X Mark II",
+        "4": "PowerShot G9 X Mark II",
+        "5": "PowerShot G9 X Mark II",
+        "6": "PowerShot G9 X Mark II",
+        "7": "PowerShot G9 X Mark II"
+      }
+    },
+    "32D2": {
+      "category": "eos",
+      "method": "email",
+      "model_top": "camera.html?model=32D2",
+      "connect_guide": "camera-email-a.html",
+      "upload_guide": "select-upload-b.html",
+      "name_by_region": {
+        "0": "EOS Kiss M",
+        "1": "EOS M50",
+        "2": "EOS M50",
+        "3": "EOS M50",
+        "4": "EOS M50",
+        "5": "EOS M50",
+        "6": "EOS M50",
+        "7": "EOS M50"
+      }
+    },
+    "32DB": {
+      "category": "other",
+      "method": "none",
+      "connect_guide": "none",
+      "upload_guide": "none",
+      "name_by_region": {
+        "0": "SELPHY CP1300",
+        "1": "SELPHY CP1300",
+        "2": "SELPHY CP1300",
+        "3": "SELPHY CP1300",
+        "4": "SELPHY CP1300",
+        "5": "SELPHY CP1300",
+        "6": "SELPHY CP1300",
+        "7": "SELPHY CP1300"
+      }
+    },
+    "32D3": {
+      "category": "compact",
+      "method": "email",
+      "model_top": "camera.html?model=32D3",
+      "connect_guide": "camera-email-a.html",
+      "upload_guide": "cloud-sync-upload.html",
+      "name_by_region": {
+        "0": "IXY 210",
+        "1": "PowerShot ELPH 200 IS",
+        "2": "PowerShot ELPH 200 IS",
+        "3": "IXUS 190 ",
+        "4": "IXUS 190 ",
+        "5": "IXUS 190 ",
+        "6": "IXUS 190 ",
+        "7": "IXUS 190 "
+      }
+    },
+    "32D4": {
+      "category": "compact",
+      "method": "none",
+      "connect_guide": "none",
+      "upload_guide": "none",
+      "name_by_region": {
+        "0": "IXY 200",
+        "1": "PowerShot ELPH 185",
+        "2": "PowerShot ELPH 185",
+        "3": "IXUS 185",
+        "4": "IXUS 185",
+        "5": "IXUS 185",
+        "6": "IXUS 185",
+        "7": "IXUS 185"
+      }
+    },
+    "32D5": {
+      "category": "compact",
+      "method": "email",
+      "model_top": "camera.html?model=32D5",
+      "connect_guide": "camera-email-a.html",
+      "upload_guide": "cloud-sync-upload.html",
+      "name_by_region": {
+        "0": "PowerShot SX430 IS",
+        "1": "PowerShot SX430 IS",
+        "2": "PowerShot SX430 IS",
+        "3": "PowerShot SX432 IS",
+        "4": "PowerShot SX432 IS",
+        "5": "PowerShot SX432 IS",
+        "6": "PowerShot SX430 IS",
+        "7": "PowerShot SX430 IS"
+      }
+    },
+    "32D6": {
+      "category": "compact",
+      "method": "email",
+      "model_top": "camera.html?model=32D6",
+      "connect_guide": "camera-email-a.html",
+      "upload_guide": "cloud-sync-upload.html",
+      "name_by_region": {
+        "0": "PowerShot SX730 HS",
+        "1": "PowerShot SX730 HS",
+        "2": "PowerShot SX730 HS",
+        "3": "PowerShot SX730 HS",
+        "4": "PowerShot SX730 HS",
+        "5": "PowerShot SX730 HS",
+        "6": "PowerShot SX730 HS",
+        "7": "PowerShot SX730 HS"
+      }
+    },
+    "32D7": {
+      "category": "compact",
+      "method": "email",
+      "model_top": "camera.html?model=32D7",
+      "connect_guide": "camera-email-a.html",
+      "upload_guide": "cloud-sync-upload.html",
+      "name_by_region": {
+        "0": "PowerShot G1 X Mark III",
+        "1": "PowerShot G1 X Mark III",
+        "2": "PowerShot G1 X Mark III",
+        "3": "PowerShot G1 X Mark III",
+        "4": "PowerShot G1 X Mark III",
+        "5": "PowerShot G1 X Mark III",
+        "6": "PowerShot G1 X Mark III",
+        "7": "PowerShot G1 X Mark III"
+      }
+    },
+    "32E4": {
+      "category": "compact",
+      "method": "email",
+      "model_top": "camera.html?model=32E4",
+      "connect_guide": "camera-email-a.html",
+      "upload_guide": "select-upload-b.html",
+      "name_by_region": {
+        "0": "PowerShot SX740 HS",
+        "1": "PowerShot SX740 HS",
+        "2": "PowerShot SX740 HS",
+        "3": "PowerShot SX740 HS",
+        "4": "PowerShot SX740 HS",
+        "5": "PowerShot SX740 HS",
+        "6": "PowerShot SX740 HS",
+        "7": "PowerShot SX740 HS"
+      }
+    },
+    "32E5": {
+      "category": "compact",
+      "method": "email",
+      "model_top": "camera.html?model=32E5",
+      "connect_guide": "camera-email-a.html",
+      "upload_guide": "select-upload-b.html",
+      "name_by_region": {
+        "0": "PowerShot G5 X Mark II",
+        "1": "PowerShot G5 X Mark II",
+        "2": "PowerShot G5 X Mark II",
+        "3": "PowerShot G5 X Mark II",
+        "4": "PowerShot G5 X Mark II",
+        "5": "PowerShot G5 X Mark II",
+        "6": "PowerShot G5 X Mark II",
+        "7": "PowerShot G5 X Mark II"
+      }
+    },
+    "32EE": {
+      "category": "compact",
+      "method": "email",
+      "model_top": "camera.html?model=32EE",
+      "connect_guide": "camera-email-a.html",
+      "upload_guide": "select-upload-b.html",
+      "name_by_region": {
+        "0": "PowerShot SX70 HS",
+        "1": "PowerShot SX70 HS",
+        "2": "PowerShot SX70 HS",
+        "3": "PowerShot SX70 HS",
+        "4": "PowerShot SX70 HS",
+        "5": "PowerShot SX70 HS",
+        "6": "PowerShot SX70 HS",
+        "7": "PowerShot SX70 HS"
+      }
+    },
+    "32F0": {
+      "category": "compact",
+      "method": "email",
+      "model_top": "camera.html?model=32F0",
+      "connect_guide": "camera-email-a.html",
+      "upload_guide": "select-upload-b.html",
+      "name_by_region": {
+        "0": "PowerShot G7 X Mark III",
+        "1": "PowerShot G7 X Mark III",
+        "2": "PowerShot G7 X Mark III",
+        "3": "PowerShot G7 X Mark III",
+        "4": "PowerShot G7 X Mark III",
+        "5": "PowerShot G7 X Mark III",
+        "6": "PowerShot G7 X Mark III",
+        "7": "PowerShot G7 X Mark III"
+      }
+    },
+    "32E7": {
+      "category": "eos",
+      "method": "email",
+      "model_top": "camera.html?model=32E7",
+      "connect_guide": "camera-email-b.html",
+      "upload_guide": "select-upload-c.html",
+      "name_by_region": {
+        "0": "EOS M6 Mark II",
+        "1": "EOS M6 Mark II",
+        "2": "EOS M6 Mark II",
+        "3": "EOS M6 Mark II",
+        "4": "EOS M6 Mark II",
+        "5": "EOS M6 Mark II",
+        "6": "EOS M6 Mark II",
+        "7": "EOS M6 Mark II"
+      }
+    },
+    "32EF": {
+      "category": "eos",
+      "method": "email",
+      "model_top": "camera.html?model=32EF",
+      "connect_guide": "camera-email-b.html",
+      "upload_guide": "select-upload-c.html",
+      "name_by_region": {
+        "0": "EOS M200",
+        "1": "EOS M200",
+        "2": "EOS M200",
+        "3": "EOS M200",
+        "4": "EOS M200",
+        "5": "EOS M200",
+        "6": "EOS M200",
+        "7": "EOS M200"
+      }
+    },
+    "32F2": {
+      "category": "other",
+      "method": "none",
+      "connect_guide": "none",
+      "upload_guide": "none",
+      "name_by_region": {
+        "0": "SELPHY SQUARE QX10",
+        "1": "SELPHY SQUARE QX10",
+        "2": "SELPHY SQUARE QX10",
+        "3": "SELPHY SQUARE QX10",
+        "4": "SELPHY SQUARE QX10",
+        "5": "SELPHY SQUARE QX10",
+        "6": "SELPHY SQUARE QX10",
+        "7": "SELPHY SQUARE QX10"
+      }
+    },
+    "ITU2": {
+      "category": "",
+      "method": "none",
+      "connect_guide": "index.html",
+      "upload_guide": "index.html",
+      "name_by_region": {
+        "0": "itu2",
+        "1": "itu2",
+        "2": "itu2",
+        "3": "itu2",
+        "4": "itu2",
+        "5": "itu2",
+        "6": "itu2",
+        "7": "itu2"
+      }
+    },
+    "3219": {
+      "category": "eos",
+      "method": "none",
+      "connect_guide": "none",
+      "upload_guide": "none",
+      "name_by_region": {
+        "0": "EOS-1D X",
+        "1": "EOS-1D X",
+        "2": "EOS-1D X",
+        "3": "EOS-1D X",
+        "4": "EOS-1D X",
+        "5": "EOS-1D X",
+        "6": "EOS-1D X",
+        "7": "EOS-1D X"
+      }
+    },
+    "323A": {
+      "category": "eos",
+      "method": "none",
+      "connect_guide": "none",
+      "upload_guide": "none",
+      "name_by_region": {
+        "0": "EOS 5D Mark III",
+        "1": "EOS 5D Mark III",
+        "2": "EOS 5D Mark III",
+        "3": "EOS 5D Mark III",
+        "4": "EOS 5D Mark III",
+        "5": "EOS 5D Mark III",
+        "6": "EOS 5D Mark III",
+        "7": "EOS 5D Mark III"
+      }
+    },
+    "326F": {
+      "category": "eos",
+      "method": "none",
+      "connect_guide": "none",
+      "upload_guide": "none",
+      "name_by_region": {
+        "0": "EOS 7D Mark II",
+        "1": "EOS 7D Mark II",
+        "2": "EOS 7D Mark II",
+        "3": "EOS 7D Mark II",
+        "4": "EOS 7D Mark II",
+        "5": "EOS 7D Mark II",
+        "6": "EOS 7D Mark II",
+        "7": "EOS 7D Mark II"
+      }
+    },
+    "323B": {
+      "category": "eos",
+      "method": "none",
+      "connect_guide": "none",
+      "upload_guide": "none",
+      "name_by_region": {
+        "0": "EOS Kiss X6i",
+        "1": "EOS Rebel T4i",
+        "2": "EOS Rebel T4i",
+        "3": "EOS 650D",
+        "4": "EOS 650D",
+        "5": "EOS 650D",
+        "6": "EOS 650D",
+        "7": "EOS 650D"
+      }
+    },
+    "3250": {
+      "category": "eos",
+      "method": "eu",
+      "connect_guide": "camera-eu.html",
+      "upload_guide": "select-upload-a.html",
+      "name_by_region": {
+        "0": "EOS 6D",
+        "1": "EOS 6D",
+        "2": "EOS 6D",
+        "3": "EOS 6D",
+        "4": "EOS 6D",
+        "5": "EOS 6D",
+        "6": "EOS 6D",
+        "7": "EOS 6D"
+      }
+    },
+    "3253": {
+      "category": "eos",
+      "method": "eu",
+      "model_top": "camera.html?model=3253",
+      "connect_guide": "camera-eu.html",
+      "upload_guide": "select-upload-a.html",
+      "name_by_region": {
+        "0": "EOS 70D",
+        "1": "EOS 70D",
+        "2": "EOS 70D",
+        "3": "EOS 70D",
+        "4": "EOS 70D",
+        "5": "EOS 70D",
+        "6": "EOS 70D",
+        "7": "EOS 70D"
+      }
+    },
+    "3272": {
+      "category": "eos",
+      "method": "none",
+      "connect_guide": "none",
+      "upload_guide": "none",
+      "name_by_region": {
+        "0": "EOS Kiss X7i",
+        "1": "EOS Rebel T5i",
+        "2": "EOS Rebel T5i",
+        "3": "EOS 700D",
+        "4": "EOS 700D",
+        "5": "EOS 700D",
+        "6": "EOS 700D",
+        "7": "EOS 700D"
+      }
+    },
+    "327F": {
+      "category": "eos",
+      "method": "none",
+      "connect_guide": "none",
+      "upload_guide": "none",
+      "name_by_region": {
+        "0": "EOS Kiss X70",
+        "1": "EOS Rebel T5",
+        "2": "EOS Rebel T5",
+        "3": "EOS 1200D",
+        "4": "EOS 1200D",
+        "5": "EOS 1200D",
+        "6": "EOS 1200D",
+        "7": "EOS 1200D"
+      }
+    },
+    "3292": {
+      "category": "eos",
+      "method": "none",
+      "connect_guide": "none",
+      "upload_guide": "none",
+      "name_by_region": {
+        "0": "EOS-1D X Mark II",
+        "1": "EOS-1D X Mark II",
+        "2": "EOS-1D X Mark II",
+        "3": "EOS-1D X Mark II",
+        "4": "EOS-1D X Mark II",
+        "5": "EOS-1D X Mark II",
+        "6": "EOS-1D X Mark II",
+        "7": "EOS-1D X Mark II"
+      }
+    },
+    "323D": {
+      "category": "eos",
+      "method": "none",
+      "connect_guide": "none",
+      "upload_guide": "none",
+      "name_by_region": {
+        "0": "EOS M",
+        "1": "EOS M",
+        "2": "EOS M",
+        "3": "EOS M",
+        "4": "EOS M",
+        "5": "EOS M",
+        "6": "EOS M",
+        "7": "EOS M"
+      }
+    },
+    "3270": {
+      "category": "eos",
+      "method": "none",
+      "connect_guide": "none",
+      "upload_guide": "none",
+      "name_by_region": {
+        "0": "EOS Kiss X7",
+        "1": "EOS Rebel SL1",
+        "2": "EOS Rebel SL1",
+        "3": "EOS 100D",
+        "4": "EOS 100D",
+        "5": "EOS 100D",
+        "6": "EOS 100D",
+        "7": "EOS 100D"
+      }
+    },
+    "3280": {
+      "category": "eos",
+      "method": "eu",
+      "model_top": "camera.html?model=3280",
+      "connect_guide": "camera-eu.html",
+      "upload_guide": "select-upload-a.html",
+      "name_by_region": {
+        "0": "EOS 8000D",
+        "1": "EOS Rebel T6s",
+        "2": "EOS Rebel T6s",
+        "3": "EOS 760D",
+        "4": "EOS 760D",
+        "5": "EOS 760D",
+        "6": "EOS 760D",
+        "7": "EOS 760D"
+      }
+    },
+    "3281": {
+      "category": "eos",
+      "method": "eu",
+      "model_top": "camera.html?model=3281",
+      "connect_guide": "camera-eu.html",
+      "upload_guide": "select-upload-a.html",
+      "name_by_region": {
+        "0": "EOS 5D Mark IV",
+        "1": "EOS 5D Mark IV",
+        "2": "EOS 5D Mark IV",
+        "3": "EOS 5D Mark IV",
+        "4": "EOS 5D Mark IV",
+        "5": "EOS 5D Mark IV",
+        "6": "EOS 5D Mark IV",
+        "7": "EOS 5D Mark IV"
+      }
+    },
+    "3294": {
+      "category": "eos",
+      "method": "eu",
+      "model_top": "camera.html?model=3294",
+      "connect_guide": "camera-eu.html",
+      "upload_guide": "select-upload-a.html",
+      "name_by_region": {
+        "0": "EOS 80D",
+        "1": "EOS 80D",
+        "2": "EOS 80D",
+        "3": "EOS 80D",
+        "4": "EOS 80D",
+        "5": "EOS 80D",
+        "6": "EOS 80D",
+        "7": "EOS 80D"
+      }
+    },
+    "3273": {
+      "category": "eos",
+      "method": "none",
+      "connect_guide": "none",
+      "upload_guide": "none",
+      "name_by_region": {
+        "0": "EOS M2",
+        "1": "EOS M2",
+        "2": "EOS M2",
+        "3": "EOS M2",
+        "4": "EOS M2",
+        "5": "EOS M2",
+        "6": "EOS M2",
+        "7": "EOS M2"
+      }
+    },
+    "3295": {
+      "category": "eos",
+      "method": "none",
+      "connect_guide": "none",
+      "upload_guide": "none",
+      "name_by_region": {
+        "0": "EOS 5Ds",
+        "1": "EOS 5Ds",
+        "2": "EOS 5Ds",
+        "3": "EOS 5Ds",
+        "4": "EOS 5Ds",
+        "5": "EOS 5Ds",
+        "6": "EOS 5Ds",
+        "7": "EOS 5Ds"
+      }
+    },
+    "32A1": {
+      "category": "eos",
+      "method": "eu",
+      "model_top": "camera.html?model=32A1",
+      "connect_guide": "camera-eu.html",
+      "upload_guide": "select-upload-a.html",
+      "name_by_region": {
+        "0": "EOS Kiss X8i",
+        "1": "EOS Rebel T6i",
+        "2": "EOS Rebel T6i",
+        "3": "EOS 750D",
+        "4": "EOS 750D",
+        "5": "EOS 750D",
+        "6": "EOS 750D",
+        "7": "EOS 750D"
+      }
+    },
+    "32AF": {
+      "category": "eos",
+      "method": "none",
+      "connect_guide": "none",
+      "upload_guide": "none",
+      "name_by_region": {
+        "0": "EOS 5Ds R",
+        "1": "EOS 5Ds R",
+        "2": "EOS 5Ds R",
+        "3": "EOS 5Ds R",
+        "4": "EOS 5Ds R",
+        "5": "EOS 5Ds R",
+        "6": "EOS 5Ds R",
+        "7": "EOS 5Ds R"
+      }
+    },
+    "32B4": {
+      "category": "eos",
+      "method": "eu",
+      "model_top": "camera.html?model=32B4",
+      "connect_guide": "camera-eu.html",
+      "upload_guide": "select-upload-a.html",
+      "name_by_region": {
+        "0": "EOS Kiss X80",
+        "1": "EOS Rebel T6",
+        "2": "EOS Rebel T6",
+        "3": "EOS 1300D",
+        "4": "EOS 1300D",
+        "5": "EOS 1300D",
+        "6": "EOS 1300D",
+        "7": "EOS 1300D"
+      }
+    },
+    "32C9": {
+      "category": "eos",
+      "method": "eu",
+      "model_top": "camera.html?model=32C9",
+      "connect_guide": "camera-eu.html",
+      "upload_guide": "select-upload-b.html",
+      "name_by_region": {
+        "0": "EOS Kiss X9i",
+        "1": "EOS Rebel T7i",
+        "2": "EOS Rebel T7i",
+        "3": "EOS 800D",
+        "4": "EOS 800D",
+        "5": "EOS 800D",
+        "6": "EOS 800D",
+        "7": "EOS 800D"
+      }
+    },
+    "32CA": {
+      "category": "eos",
+      "method": "eu",
+      "model_top": "camera.html?model=32CA",
+      "connect_guide": "camera-eu.html",
+      "upload_guide": "select-upload-a.html",
+      "name_by_region": {
+        "0": "EOS 6D Mark II ",
+        "1": "EOS 6D Mark II ",
+        "2": "EOS 6D Mark II ",
+        "3": "EOS 6D Mark II ",
+        "4": "EOS 6D Mark II ",
+        "5": "EOS 6D Mark II ",
+        "6": "EOS 6D Mark II ",
+        "7": "EOS 6D Mark II "
+      }
+    },
+    "32CB": {
+      "category": "eos",
+      "method": "eu",
+      "model_top": "camera.html?model=32CB",
+      "connect_guide": "camera-eu.html",
+      "upload_guide": "select-upload-b.html",
+      "name_by_region": {
+        "0": "EOS 9000D",
+        "1": "EOS 77D",
+        "2": "EOS 77D",
+        "3": "EOS 77D",
+        "4": "EOS 77D",
+        "5": "EOS 77D",
+        "6": "EOS 77D",
+        "7": "EOS 77D"
+      }
+    },
+    "32CC": {
+      "category": "eos",
+      "method": "eu",
+      "model_top": "camera.html?model=32CC",
+      "connect_guide": "camera-eu.html",
+      "upload_guide": "select-upload-b.html",
+      "name_by_region": {
+        "0": "EOS Kiss X9",
+        "1": "EOS Rebel SL2",
+        "2": "EOS Rebel SL2",
+        "3": "EOS 200D",
+        "4": "EOS 200D",
+        "5": "EOS 200D",
+        "6": "EOS 200D",
+        "7": "EOS 200D"
+      }
+    },
+    "32DA": {
+      "category": "eos",
+      "method": "email",
+      "model_top": "camera.html?model=32DA",
+      "connect_guide": "camera-email-c.html",
+      "upload_guide": "select-upload-d.html",
+      "name_by_region": {
+        "0": "EOS R",
+        "1": "EOS R",
+        "2": "EOS R",
+        "3": "EOS R",
+        "4": "EOS R",
+        "5": "EOS R",
+        "6": "EOS R",
+        "7": "EOS R"
+      }
+    },
+    "32E8": {
+      "category": "eos",
+      "method": "none",
+      "connect_guide": "none",
+      "upload_guide": "none",
+      "name_by_region": {
+        "0": "EOS-1D X Mark III",
+        "1": "EOS-1D X Mark III",
+        "2": "EOS-1D X Mark III",
+        "3": "EOS-1D X Mark III",
+        "4": "EOS-1D X Mark III",
+        "5": "EOS-1D X Mark III",
+        "6": "EOS-1D X Mark III",
+        "7": "EOS-1D X Mark III"
+      }
+    },
+    "32E1": {
+      "category": "eos",
+      "method": "eu",
+      "model_top": "camera.html?model=32E1",
+      "connect_guide": "camera-eu.html",
+      "upload_guide": "select-upload-a.html",
+      "name_by_region": {
+        "0": "EOS Kiss X90",
+        "1": "EOS Rebel T7",
+        "2": "EOS Rebel T7",
+        "3": "EOS 2000D",
+        "4": "EOS 2000D",
+        "5": "EOS 2000D",
+        "6": "EOS 1500D",
+        "7": "EOS 1500D"
+      }
+    },
+    "32E2": {
+      "category": "eos",
+      "method": "email",
+      "model_top": "camera.html?model=32E2",
+      "connect_guide": "camera-email-c.html",
+      "upload_guide": "select-upload-d.html",
+      "name_by_region": {
+        "0": "EOS RP",
+        "1": "EOS RP",
+        "2": "EOS RP",
+        "3": "EOS RP",
+        "4": "EOS RP",
+        "5": "EOS RP",
+        "6": "EOS RP",
+        "7": "EOS RP"
+      }
+    },
+    "32F1": {
+      "category": "eos",
+      "method": "email",
+      "model_top": "camera.html?model=32F1",
+      "connect_guide": "camera-email-b.html",
+      "upload_guide": "select-upload-c.html",
+      "name_by_region": {
+        "0": "EOS Kiss X10i",
+        "1": "EOS Rebel T8i",
+        "2": "EOS Rebel T8i",
+        "3": "EOS 850D",
+        "4": "EOS 850D",
+        "5": "EOS 850D",
+        "6": "EOS 850D",
+        "7": "EOS 850D"
+      }
+    },
+    "32E9": {
+      "category": "eos",
+      "method": "email",
+      "model_top": "camera.html?model=32E9",
+      "connect_guide": "camera-email-b.html",
+      "upload_guide": "select-upload-c.html",
+      "name_by_region": {
+        "0": "EOS Kiss X10",
+        "1": "EOS Rebel SL3",
+        "2": "EOS Rebel SL3",
+        "3": "EOS 250D",
+        "4": "EOS 250D",
+        "5": "EOS 250D",
+        "6": "EOS 200D II",
+        "7": "EOS 200D II"
+      }
+    },
+    "32EA": {
+      "category": "eos",
+      "method": "email",
+      "model_top": "camera.html?model=32EA",
+      "connect_guide": "camera-email-b.html",
+      "upload_guide": "select-upload-d.html",
+      "name_by_region": {
+        "0": "EOS 90D",
+        "1": "EOS 90D",
+        "2": "EOS 90D",
+        "3": "EOS 90D",
+        "4": "EOS 90D",
+        "5": "EOS 90D",
+        "6": "EOS 90D",
+        "7": "EOS 90D"
+      }
+    },
+    "32DAb": {
+      "category": "eos",
+      "method": "email",
+      "model_top": "camera.html?model=32DAb",
+      "connect_guide": "camera-email-c.html",
+      "upload_guide": "select-upload-d.html",
+      "name_by_region": {
+        "0": "EOS Ra",
+        "1": "EOS Ra",
+        "2": "EOS Ra",
+        "3": "EOS Ra",
+        "4": "EOS Ra",
+        "5": "EOS Ra",
+        "6": "EOS Ra",
+        "7": "EOS Ra"
+      }
+    }
+  }
+}
