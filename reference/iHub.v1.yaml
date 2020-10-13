@@ -1,0 +1,784 @@
+openapi: 3.0.0
+info:
+  title: iHub
+  version: '1.0'
+servers:
+  - url: 'http://localhost:3000'
+paths:
+  /getBucketInfo:
+    get:
+      summary: getBucketInfo
+      tags: []
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/buckets'
+              examples:
+                example-1:
+                  value:
+                    region: string
+                    middle:
+                      bucket: string
+                      keybase: string
+                    extra_large:
+                      bucket: string
+                      keybase: string
+                    original:
+                      bucket: string
+                      keybase: string
+                    exif:
+                      bucket: string
+                      keybase: string
+      operationId: getBucketInfo
+      parameters: []
+  /getFileList:
+    post:
+      summary: getFileList
+      tags: []
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  Items:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/imageItem'
+                  Count:
+                    type: integer
+                  LastEvaluatedKey:
+                    type: string
+              examples:
+                example-1:
+                  value:
+                    Items:
+                      - imageId: string
+                        sourceDevice: string
+                        extName: string
+                        shootingTime: 0
+                        uploadingTime: 0
+                        leftDay: 0
+                        contentLength: 0
+                        playTime: 0
+                        datePath: string
+                    Count: 0
+                    LastEvaluatedKey: string
+      operationId: getFileList
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/filter'
+            examples:
+              example-1:
+                value:
+                  filterName1: string
+                  filterValue1: string
+                  filterName2: string
+                  filterValue2: string
+                  limit: 0
+                  LastEvaluatedKey: string
+  /getFilter:
+    post:
+      summary: getfilter
+      tags:
+        - filter
+        - image
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  Items:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/filterItem'
+              examples:
+                example-1:
+                  value:
+                    Items:
+                      - name: string
+                        value: string
+      operationId: getFilter
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/filterName'
+            examples:
+              example-1:
+                value:
+                  filterName1: string
+        description: ''
+  /getFileCount:
+    post:
+      summary: getFileCount
+      tags: []
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  LastEvaluatedKey:
+                    type: string
+                  Count:
+                    type: integer
+                  size:
+                    type: integer
+                required:
+                  - LastEvaluatedKey
+                  - Count
+              examples:
+                example-1:
+                  value:
+                    LastEvaluatedKey: string
+                    Count: 0
+                    size: 0
+      operationId: getFileCount
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                filterName1:
+                  type: string
+                filterValue1:
+                  type: string
+                filterName2:
+                  type: string
+                filterValue2:
+                  type: string
+                LastEvaluatedKey:
+                  type: string
+                operation:
+                  type: string
+              required:
+                - filterName1
+                - filterValue1
+                - filterName2
+                - filterValue2
+            examples:
+              example-1:
+                value:
+                  filterName1: string
+                  filterValue1: string
+                  filterName2: string
+                  filterValue2: string
+                  LastEvaluatedKey: string
+                  operation: string
+  /processAllFile:
+    post:
+      summary: processAllFile
+      tags:
+        - image
+        - ' operation'
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  LastEvaluatedKey:
+                    type: string
+      operationId: processAllFile
+      description: Client need to repeat call this API until “LastEvaluatedKey” in output is undefined.
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                filterName1:
+                  type: string
+                filterValue1:
+                  type: string
+                filterName2:
+                  type: string
+                filterValue2:
+                  type: string
+                LastEvaluatedKey:
+                  type: string
+                operation:
+                  type: string
+                optCountLimits:
+                  type: integer
+                target:
+                  type: array
+                  items:
+                    type: string
+                album:
+                  type: string
+              required:
+                - filterName1
+                - filterValue1
+                - operation
+            examples: {}
+  /beginUpload:
+    post:
+      summary: beginUpload
+      tags:
+        - image
+        - ' upload'
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  Items:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        name:
+                          type: string
+                        newName:
+                          type: string
+                      required:
+                        - name
+                        - newName
+                required:
+                  - Items
+              examples:
+                example-1:
+                  value:
+                    Items:
+                      - name: string
+                        newName: string
+      operationId: beginUpload
+      description: |-
+        1. Client calls beginUpload to get file names;
+        2. Client calls s3 using bucket and keybase+filename to upload file
+        3. ihub will creating thumbnail images as file uploaded
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                Items:
+                  type: array
+                  items:
+                    type: string
+                storage:
+                  type: integer
+                totalSize:
+                  type: integer
+              required:
+                - Items
+                - storage
+                - totalSize
+  /getGoogleToken:
+    get:
+      summary: getGoogleToken
+      tags:
+        - token
+        - google
+      responses: {}
+      operationId: getGoogleToken
+      description: 'Open web browser use the following url: https://kulyuqi158.execute-api.cn-north-1.amazonaws.com.cn/default/getGoogleToken?userid=2 3432&appRedirectUrl=http://somehost/callback'
+  /getFlickrToken:
+    get:
+      summary: getFlickrToken
+      tags:
+        - token
+        - flickr
+      responses: {}
+      operationId: getFlickrToken
+      description: 'Open web browser use the following url: https://kulyuqi158.execute-api.cn-north-1.amazonaws.com.cn/default/getFlickrToken?userid=23 432&appRedirectUrl=http://somehost/callback'
+  /getYouTubeToken:
+    get:
+      summary: getYouTubeToken
+      tags:
+        - token
+        - youtube
+      responses: {}
+      operationId: getYouTubeToken
+      description: 'Open web browser use the following url: https://kulyuqi158.execute-api.cn-north-1.amazonaws.com.cn/default/getYouTubeToken?userid= 23432&appRedirectUrl=http://somehost/callback'
+  /disconnectService:
+    post:
+      summary: disconnectService
+      tags:
+        - disconnect
+        - ' service'
+      responses: {}
+      operationId: disconnectService
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                service:
+                  type: string
+              required:
+                - service
+  /getServiceInfo:
+    post:
+      summary: getServiceInfo
+      tags: []
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  info:
+                    type: object
+                    properties:
+                      autotransfer:
+                        type: boolean
+                      failedCount:
+                        type: integer
+                      expired:
+                        type: boolean
+              examples:
+                example-1:
+                  value:
+                    info:
+                      autotransfer: true
+                      failedCount: 0
+                      expired: true
+      operationId: getServiceInfo
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                service:
+                  type: string
+              required:
+                - service
+        description: ''
+  /setServiceInfo:
+    post:
+      summary: setServiceInfo
+      tags:
+        - ' service'
+      responses: {}
+      operationId: setServiceInfo
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                service:
+                  type: string
+                info:
+                  type: object
+                  properties:
+                    autotransfer:
+                      type: boolean
+            examples:
+              example-1:
+                value:
+                  service: string
+                  info:
+                    autotransfer: true
+  /getFailedList:
+    post:
+      summary: getFailedList
+      tags:
+        - ' service'
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  Items:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/imageItem'
+                  Count:
+                    type: integer
+                  LastEvaluatedKey:
+                    type: string
+                required:
+                  - Items
+                  - Count
+              examples:
+                example-1:
+                  value:
+                    Items:
+                      - imageId: string
+                        sourceDevice: string
+                        extName: string
+                        shootingTime: 0
+                        uploadingTime: 0
+                        leftDay: 0
+                        contentLength: 0
+                        playTime: 0
+                        datePath: string
+                    Count: 0
+                    LastEvaluatedKey: string
+      operationId: getFailedList
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                service:
+                  type: string
+  /transfer:
+    post:
+      summary: transfer
+      tags:
+        - ' service'
+        - transfer
+      responses: {}
+      operationId: transfer
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                service:
+                  type: string
+                Items:
+                  type: array
+                  items:
+                    type: string
+              required:
+                - service
+                - Items
+  /retransfer:
+    post:
+      summary: retransfer
+      tags:
+        - ' service'
+        - transfer
+      responses: {}
+      operationId: retransfer
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                service:
+                  type: string
+              required:
+                - service
+  /getAddressList:
+    get:
+      summary: ''
+      operationId: getAddressList
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  Items:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/email'
+              examples:
+                example-1:
+                  value:
+                    Items:
+                      - name: string
+                        email: string
+  /addAddress:
+    post:
+      summary: addAddress
+      tags:
+        - email
+      responses: {}
+      operationId: addAddress
+      description: Add address. Return error (ERR_ITEM_EXISTED) if the email is existed.
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/email'
+        description: ''
+  /setAddress:
+    post:
+      summary: setAddress
+      tags:
+        - email
+      responses: {}
+      operationId: setAddress
+      description: Update address. Return error (ERR_ITEM_NOT_FOUND) if the email is not existed.
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/email'
+            examples: {}
+        description: ''
+  /removeAddress:
+    post:
+      summary: removeAddress
+      tags: []
+      responses: {}
+      operationId: removeAddress
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/email'
+  /sendFile:
+    post:
+      summary: sendFile
+      tags:
+        - email
+      responses: {}
+      operationId: sendFile
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                target:
+                  type: array
+                  items:
+                    type: string
+                Items:
+                  type: array
+                  items:
+                    type: string
+  /receiveFileList:
+    post:
+      summary: receiveFileList
+      tags: []
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  Items:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/imageItem'
+                  fromAddress:
+                    type: string
+                  toAddress:
+                    type: string
+                  Count:
+                    type: integer
+      operationId: receiveFileList
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                sendId:
+                  type: string
+        description: client received from an URL
+  /receiveFile:
+    post:
+      summary: receiveFile
+      tags:
+        - email
+      responses: {}
+      operationId: receiveFile
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                sendId:
+                  type: string
+        description: client received from an URL
+components:
+  schemas:
+    bucket:
+      description: ''
+      type: object
+      properties:
+        bucket:
+          type: string
+          minLength: 1
+        keybase:
+          type: string
+          minLength: 1
+      required:
+        - bucket
+        - keybase
+    imageItem:
+      title: imageItem
+      type: object
+      x-examples:
+        example-1:
+          imageId: a6729b73-2376-46b5-a8e6-31e614d677b9
+          sourceDevice: da910bad-b28a-432a-8680-ae117a8d69a5
+          extName: jpg
+          shootingTime: 1267103483
+          uploadingTime: 1592656023
+          leftDay: 15
+          contentLength: 454765
+          playTime: 0
+          datePath: 20200701/15
+      properties:
+        imageId:
+          type: string
+        sourceDevice:
+          type: string
+        extName:
+          type: string
+        shootingTime:
+          type: integer
+        uploadingTime:
+          type: integer
+        leftDay:
+          type: integer
+        contentLength:
+          type: integer
+        playTime:
+          type: integer
+        datePath:
+          type: string
+      required:
+        - imageId
+        - sourceDevice
+        - extName
+        - shootingTime
+        - uploadingTime
+        - leftDay
+        - contentLength
+        - playTime
+        - datePath
+    filter:
+      title: filter
+      type: object
+      properties:
+        filterName1:
+          type: string
+        filterValue1:
+          type: string
+        filterName2:
+          type: string
+        filterValue2:
+          type: string
+        limit:
+          type: integer
+        LastEvaluatedKey:
+          type: string
+      required:
+        - filterName1
+        - filterValue1
+        - limit
+      x-examples:
+        example-1:
+          filterName1: format
+          filterValue1: JPEG
+          filterName2: shootingTime
+          filterValue2: 1543534454|1548534754
+          limit: 25
+          LastEvaluatedKey: XXXXXXX
+    buckets:
+      title: buckets
+      type: object
+      properties:
+        region:
+          type: string
+        middle:
+          $ref: '#/components/schemas/bucket'
+        extra_large:
+          $ref: '#/components/schemas/bucket'
+        original:
+          $ref: '#/components/schemas/bucket'
+        exif:
+          $ref: '#/components/schemas/bucket'
+      required:
+        - region
+        - middle
+        - extra_large
+        - original
+        - exif
+    imageItems:
+      title: imageItems
+      type: object
+      x-examples:
+        example-1:
+          Items:
+            - imageId: string
+              sourceDevice: string
+              extName: string
+              shootingTime: 0
+              uploadingTime: 0
+              leftDay: 0
+              contentLength: 0
+              playTime: 0
+              datePath: string
+          Count: 0
+          LastEvaluatedKey: string
+      properties:
+        Items:
+          type: array
+          items:
+            $ref: '#/components/schemas/imageItem'
+        Count:
+          type: integer
+        LastEvaluatedKey:
+          type: string
+      required:
+        - Items
+        - Count
+        - LastEvaluatedKey
+    filterName:
+      title: filterName
+      type: object
+      properties:
+        filterName1:
+          type: string
+      required:
+        - filterName1
+    filterItem:
+      title: filterItem
+      type: object
+      properties:
+        name:
+          type: string
+        value:
+          type: string
+      required:
+        - name
+        - value
+    email:
+      title: email
+      type: object
+      properties:
+        name:
+          type: string
+        email:
+          type: string
+      required:
+        - name
+        - email
