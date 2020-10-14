@@ -324,8 +324,13 @@ paths:
               properties:
                 service:
                   type: string
+                  description: 'Googledrive, Flickr, Youtubelive'
               required:
                 - service
+            examples:
+              example:
+                value:
+                  service: Googledrive
   /getServiceInfo:
     post:
       summary: getServiceInfo
@@ -517,6 +522,11 @@ paths:
           application/json:
             schema:
               $ref: '#/components/schemas/email'
+            examples:
+              example:
+                value:
+                  name: kawazome
+                  email: kawazome@gmail.com
         description: ''
   /setAddress:
     post:
@@ -673,11 +683,18 @@ paths:
                 properties:
                   name:
                     type: string
+                    description: Album name
                   value:
                     type: string
+                    description: Album ID
                 required:
                   - name
                   - value
+              examples:
+                example:
+                  value:
+                    name: 2020 summer
+                    value: sdertr34gtrgtr84
       operationId: addAlbum
       requestBody:
         content:
@@ -687,11 +704,19 @@ paths:
               properties:
                 name:
                   type: string
+                  description: |
+                    Album name
                 description:
                   type: string
+                  description: Album description
               required:
                 - name
                 - description
+            examples:
+              example:
+                value:
+                  name: 2020 summer
+                  description: Memories of summer vacation in 2020
   /removeAlbum:
     post:
       summary: removeAlbum
@@ -747,6 +772,7 @@ paths:
               properties:
                 value:
                   type: string
+                  description: Album ID
                 Items:
                   type: array
                   description: 'contentid format is: image#shootingTime#imageId'
@@ -755,6 +781,13 @@ paths:
               required:
                 - value
                 - Items
+            examples:
+              example:
+                value:
+                  value: sdertr34gtrgtr84
+                  Items:
+                    - image#1266302616#57af6e07-e4a7-4b88-a398-6f929a68acc6
+                    - image#1266302512#420ddbd3-214c-4567-b361-188b6e874fd9
   /removeAlbumImage:
     post:
       summary: removeAlbumImage
@@ -1004,6 +1037,21 @@ components:
         - extra_large
         - original
         - exif
+      x-examples:
+        example:
+          region: string
+          middle:
+            bucket: ihubtest
+            keybase: thumb/user1
+          extra_large:
+            bucket: ihubtest
+            keybase: noramal/user1
+          original:
+            bucket: ihubtest
+            keybase: original/user1
+          exif:
+            bucket: ihubtest
+            keybase: exif/user1
     imageItems:
       title: imageItems
       type: object
@@ -1059,11 +1107,17 @@ components:
       properties:
         name:
           type: string
+          description: Destination name
         email:
           type: string
+          description: Email address
       required:
         - name
         - email
+      x-examples:
+        example:
+          name: Kawazome
+          email: kawazome@gmail.com
     product:
       description: |-
         if no iHub-supported device, return null, no products attribute in return;
