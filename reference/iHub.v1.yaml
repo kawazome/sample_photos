@@ -293,7 +293,7 @@ paths:
         - google
       responses: {}
       operationId: getGoogleToken
-      description: 'Open web browser use the following url: https://kulyuqi158.execute-api.cn-north-1.amazonaws.com.cn/default/getGoogleToken?userid=2 3432&appRedirectUrl=http://somehost/callback'
+      description: 'Open web browser use the following url: https://kulyuqi158.execute-api.cn-north-1.amazonaws.com.cn/default/getGoogleToken?userid=23432&appRedirectUrl=http://somehost/callback'
   /getFlickrToken:
     get:
       summary: getFlickrToken
@@ -302,7 +302,7 @@ paths:
         - flickr
       responses: {}
       operationId: getFlickrToken
-      description: 'Open web browser use the following url: https://kulyuqi158.execute-api.cn-north-1.amazonaws.com.cn/default/getFlickrToken?userid=23 432&appRedirectUrl=http://somehost/callback'
+      description: 'Open web browser use the following url: https://kulyuqi158.execute-api.cn-north-1.amazonaws.com.cn/default/getFlickrToken?userid=23432&appRedirectUrl=http://somehost/callback'
   /getYouTubeToken:
     get:
       summary: getYouTubeToken
@@ -311,7 +311,7 @@ paths:
         - youtube
       responses: {}
       operationId: getYouTubeToken
-      description: 'Open web browser use the following url: https://kulyuqi158.execute-api.cn-north-1.amazonaws.com.cn/default/getYouTubeToken?userid= 23432&appRedirectUrl=http://somehost/callback'
+      description: 'Open web browser use the following url: https://kulyuqi158.execute-api.cn-north-1.amazonaws.com.cn/default/getYouTubeToken?userid=23432&appRedirectUrl=http://somehost/callback'
   /disconnectService:
     post:
       summary: disconnectService
@@ -616,6 +616,293 @@ paths:
                 sendId:
                   type: string
         description: client received from an URL
+  /setStoreTime:
+    post:
+      summary: setStoreTime
+      tags:
+        - image
+        - storage
+      responses: {}
+      operationId: setStoreTime
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                Items:
+                  type: array
+                  items:
+                    type: string
+                storage:
+                  type: integer
+              required:
+                - Items
+                - storage
+  /getStorageSize:
+    get:
+      summary: getStorageSize
+      tags:
+        - storage
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  totalSize:
+                    type: integer
+                  usedSize:
+                    type: integer
+                required:
+                  - totalSize
+                  - usedSize
+      operationId: getStorageSize
+  /addAlbum:
+    post:
+      summary: addAlbum
+      tags:
+        - album
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  name:
+                    type: string
+                  value:
+                    type: string
+                required:
+                  - name
+                  - value
+      operationId: addAlbum
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                description:
+                  type: string
+              required:
+                - name
+                - description
+  /removeAlbum:
+    post:
+      summary: removeAlbum
+      tags:
+        - album
+      responses: {}
+      operationId: removeAlbum
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                value:
+                  type: string
+              required:
+                - value
+  /renameAlbum:
+    post:
+      summary: renameAlbum
+      tags:
+        - album
+      responses: {}
+      operationId: renameAlbum
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                description:
+                  type: string
+                value:
+                  type: string
+              required:
+                - name
+                - description
+                - value
+  /addAlbumImage:
+    post:
+      summary: addAlbumImage
+      tags:
+        - album
+        - image
+      responses: {}
+      operationId: addAlbumImage
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                value:
+                  type: string
+                Items:
+                  type: array
+                  description: 'contentid format is: image#shootingTime#imageId'
+                  items:
+                    type: string
+              required:
+                - value
+                - Items
+  /removeAlbumImage:
+    post:
+      summary: removeAlbumImage
+      tags:
+        - album
+        - image
+      responses: {}
+      operationId: removeAlbumImage
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                value:
+                  type: string
+                Items:
+                  type: array
+                  description: 'contentid format is: image#shootingTime#imageId'
+                  items:
+                    type: string
+              required:
+                - value
+                - Items
+  /refreshToken:
+    post:
+      summary: refreshToken
+      tags:
+        - auth
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  idToken:
+                    type: string
+                  nonce:
+                    type: string
+                required:
+                  - idToken
+                  - nonce
+      operationId: refreshToken
+      description: ''
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                idToken:
+                  type: string
+                nonce:
+                  type: string
+              required:
+                - idToken
+                - nonce
+  /getUserProfileAndLastDevice:
+    post:
+      summary: getUserProfileAndLastDevice
+      tags:
+        - auth
+        - user
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  sub:
+                    type: string
+                  given_name:
+                    type: string
+                  family_name:
+                    type: string
+                  email:
+                    type: string
+                  email_verified:
+                    type: boolean
+                  locale:
+                    type: string
+                  registered_date:
+                    type: string
+                  address:
+                    type: object
+                    properties:
+                      country:
+                        type: string
+                  registration_client_id:
+                    type: string
+                  state:
+                    type: array
+                    items:
+                      type: string
+                  agreement_version:
+                    type: string
+                  agreement_date:
+                    type: string
+                  products:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/product'
+                required:
+                  - sub
+                  - given_name
+                  - family_name
+                  - email
+                  - email_verified
+                  - registered_date
+                  - address
+                  - registration_client_id
+                  - state
+                  - agreement_version
+                  - agreement_date
+              examples:
+                example-1:
+                  value:
+                    sub: string
+                    given_name: string
+                    family_name: string
+                    email: string
+                    email_verified: true
+                    locale: string
+                    registered_date: string
+                    address:
+                      country: string
+                    registration_client_id: string
+                    state:
+                      - string
+                    agreement_version: string
+                    agreement_date: string
+                    products:
+                      - method: string
+                        connect_guide: string
+                        upload_guide: string
+                        registeredDate: string
+                        productName: string
+                        serialNumber: string
+                        productId: string
+      operationId: getUserProfileAndLastDevice
+      description: ''
 components:
   schemas:
     bucket:
@@ -782,3 +1069,39 @@ components:
       required:
         - name
         - email
+    product:
+      description: |-
+        if no iHub-supported device, return null, no products attribute in return;
+        in products, only the latest linked device (iHub support) is returned;
+        in products[0].method attribute, the link method is shown (none, email, eu)
+      type: object
+      properties:
+        method:
+          type: string
+          minLength: 1
+        connect_guide:
+          type: string
+          minLength: 1
+        upload_guide:
+          type: string
+          minLength: 1
+        registeredDate:
+          type: string
+          minLength: 1
+        productName:
+          type: string
+          minLength: 1
+        serialNumber:
+          type: string
+          minLength: 1
+        productId:
+          type: string
+          minLength: 1
+      required:
+        - method
+        - connect_guide
+        - upload_guide
+        - registeredDate
+        - productName
+        - serialNumber
+        - productId
