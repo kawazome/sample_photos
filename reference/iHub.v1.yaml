@@ -8,7 +8,8 @@ paths:
   /getBucketInfo:
     get:
       summary: getBucketInfo
-      tags: []
+      tags:
+        - iHub
       responses:
         '200':
           description: OK
@@ -234,6 +235,7 @@ paths:
       tags:
         - image
         - ' upload'
+        - iHub
       responses:
         '200':
           description: OK
@@ -318,6 +320,7 @@ paths:
       tags:
         - disconnect
         - ' service'
+        - iHub
       responses: {}
       operationId: disconnectService
       requestBody:
@@ -512,6 +515,7 @@ paths:
       summary: addAddress
       tags:
         - email
+        - iHub
       responses: {}
       operationId: addAddress
       description: Add address. Return error (ERR_ITEM_EXISTED) if the email is existed.
@@ -740,6 +744,7 @@ paths:
       tags:
         - album
         - image
+        - iHub
       responses: {}
       operationId: addAlbumImage
       requestBody:
@@ -1105,3 +1110,11 @@ components:
         - productName
         - serialNumber
         - productId
+tags:
+  - name: email
+  - name: iHub
+  - name: album
+  - name: image
+  - name: ' upload'
+  - name: disconnect
+  - name: ' service'
