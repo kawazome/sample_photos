@@ -947,6 +947,185 @@ paths:
       description: ''
       tags:
         - 7. Register/Authenticate user
+  /linkDeviceBySerialNumber:
+    post:
+      summary: linkDeviceBySerialNumber
+      tags:
+        - 8. Camera link
+      responses: {}
+      operationId: linkDeviceBySerialNumber
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                productName:
+                  type: string
+                  description: the product name
+                serialNumber:
+                  type: string
+                  description: the end-user's product serial number
+            examples:
+              example:
+                value:
+                  productName: EOS R5
+                  serialNumber: '6181400000505'
+  /unlinkDevice:
+    post:
+      summary: unlinkDevice
+      tags:
+        - 8. Camera link
+      operationId: unlinkDevice
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                value:
+                  type: string
+                  description: value in filter camera#device_aliasId
+      responses:
+        '200':
+          description: OK
+          headers: {}
+  /changeDeviceInfo:
+    post:
+      summary: changeDeviceInfo
+      tags:
+        - 8. Camera link
+      responses: {}
+      operationId: changeDeviceInfo
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                value:
+                  type: string
+                  description: value in filter camera#device_aliasId
+                newName:
+                  type: string
+              required:
+                - value
+                - newName
+  /setLinkedDeviceFlag:
+    post:
+      summary: setLinkedDeviceFlag
+      tags:
+        - 8. Camera link
+      responses:
+        '200':
+          description: OK
+      operationId: setLinkedDeviceFlag
+  /confirmNumber:
+    post:
+      summary: confirmNumber
+      tags:
+        - 8. Camera link
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  confirmationNumber:
+                    type: string
+      operationId: confirmNumber
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                code:
+                  type: string
+  /completeRegistration:
+    post:
+      summary: completeRegistration
+      tags:
+        - 8. Camera link
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    description: ''
+        '400':
+          description: Bad Request
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    description: Error message
+                  request_params:
+                    type: object
+                    properties:
+                      confirmation_number:
+                        type: string
+                      alias_id:
+                        type: string
+      operationId: completeRegistration
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                confirmation_number:
+                  type: string
+                alias_id:
+                  type: string
+              required:
+                - confirmation_number
+                - alias_id
+  /setDeviceToken:
+    post:
+      summary: setDeviceToken
+      tags:
+        - 8. Camera link
+      responses: {}
+      operationId: setDeviceToken
+      description: Set IOS/Android device token for receiving notification message.
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                deviceId:
+                  type: string
+                  description: an UUID of device
+                token:
+                  type: string
+                os:
+                  type: string
+                model:
+                  type: string
+              required:
+                - deviceId
+                - token
+                - os
+                - model
+            examples:
+              example:
+                value:
+                  deviceId: xxxxxx-xxxxx
+                  token: 235423543fr34554ar354tt
+                  os: ios14.1
+                  model: iPhone12
 components:
   schemas:
     bucket:
