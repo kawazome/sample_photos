@@ -1,0 +1,19 @@
+{
+  "region": "eu-west-1",
+  "middle": {
+    "bucket": "ihubtest",
+    "keybase": "thumb/user1"
+  },
+  "extra_large": {
+    "bucket": "ihubtest",
+    "keybase": "noramal/user1"
+  },
+  "original": {
+    "bucket": "ihubtest",
+    "keybase": "original/user1"
+  },
+  "exif": {
+    "bucket": "ihubtest",
+    "keybase": "exif/user1"
+  }
+}
