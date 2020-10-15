@@ -2,6 +2,16 @@ openapi: 3.0.0
 info:
   title: iHub
   version: '1.0'
+  description: |-
+    We use REST API of AWS API gateway for all APIs. Input and output data use JSON format. If there is only output in API definition, use GET method.
+    If there are both input and output in API definition, use POST method.
+    Add client version in HTTP header:
+    Android client: “ihubclient:android_1.0” IOS client: “ihubclient:ios_1.0”
+    Web client: “ihubclient:web_1.0”
+    PC client: “ihubclient:pc_1.0”
+    Add user id in HTTP header:
+    “userid: a89d8c9035b423fe8d7” Refer to chapter 7 for userid.
+    iHub API returns string for language independent display only.
 servers:
   - url: 'http://localhost:3000'
 paths:
@@ -34,12 +44,10 @@ paths:
       operationId: getBucketInfo
       parameters: []
       tags:
-        - bucket
+        - 1. View image
   /getFileList:
     post:
       summary: getFileList
-      tags:
-        - image
       responses:
         '200':
           description: |-
@@ -90,11 +98,11 @@ paths:
                   filterValue2: 1543534454|1548534754
                   limit: 25
                   LastEvaluatedKey: xxxxxxxxxx
+      tags:
+        - 1. View image
   /getFilter:
     post:
       summary: getfilter
-      tags:
-        - image
       responses:
         '200':
           description: OK
@@ -126,11 +134,11 @@ paths:
                 value:
                   filterName1: address
         description: ''
+      tags:
+        - 1. View image
   /getFileCount:
     post:
       summary: getFileCount
-      tags:
-        - image
       responses:
         '200':
           description: OK
@@ -187,11 +195,11 @@ paths:
                   filterValue2: string
                   LastEvaluatedKey: string
                   operation: string
+      tags:
+        - 1. View image
   /processAllFile:
     post:
       summary: processAllFile
-      tags:
-        - image
       responses:
         '200':
           description: OK
@@ -235,11 +243,11 @@ paths:
                 - filterValue1
                 - operation
             examples: {}
+      tags:
+        - 1. View image
   /beginUpload:
     post:
       summary: beginUpload
-      tags:
-        - image
       responses:
         '200':
           description: OK
@@ -291,35 +299,35 @@ paths:
                 - Items
                 - storage
                 - totalSize
+      tags:
+        - 2. Upload image
   /getGoogleToken:
     get:
       summary: getGoogleToken
-      tags:
-        - token
       responses: {}
       operationId: getGoogleToken
       description: 'Open web browser use the following url: https://kulyuqi158.execute-api.cn-north-1.amazonaws.com.cn/default/getGoogleToken?userid=23432&appRedirectUrl=http://somehost/callback'
+      tags:
+        - 3. Transfer image
   /getFlickrToken:
     get:
       summary: getFlickrToken
-      tags:
-        - token
       responses: {}
       operationId: getFlickrToken
       description: 'Open web browser use the following url: https://kulyuqi158.execute-api.cn-north-1.amazonaws.com.cn/default/getFlickrToken?userid=23432&appRedirectUrl=http://somehost/callback'
+      tags:
+        - 3. Transfer image
   /getYouTubeToken:
     get:
       summary: getYouTubeToken
-      tags:
-        - token
       responses: {}
       operationId: getYouTubeToken
       description: 'Open web browser use the following url: https://kulyuqi158.execute-api.cn-north-1.amazonaws.com.cn/default/getYouTubeToken?userid=23432&appRedirectUrl=http://somehost/callback'
+      tags:
+        - 3. Transfer image
   /disconnectService:
     post:
       summary: disconnectService
-      tags:
-        - ' service'
       responses: {}
       operationId: disconnectService
       requestBody:
@@ -337,11 +345,11 @@ paths:
               example:
                 value:
                   service: Googledrive
+      tags:
+        - 3. Transfer image
   /getServiceInfo:
     post:
       summary: getServiceInfo
-      tags:
-        - ' service'
       responses:
         '200':
           description: OK
@@ -378,11 +386,11 @@ paths:
               required:
                 - service
         description: ''
+      tags:
+        - 3. Transfer image
   /setServiceInfo:
     post:
       summary: setServiceInfo
-      tags:
-        - ' service'
       responses: {}
       operationId: setServiceInfo
       requestBody:
@@ -404,11 +412,11 @@ paths:
                   service: string
                   info:
                     autotransfer: true
+      tags:
+        - 3. Transfer image
   /getFailedList:
     post:
       summary: getFailedList
-      tags:
-        - ' service'
       responses:
         '200':
           description: OK
@@ -452,11 +460,11 @@ paths:
               properties:
                 service:
                   type: string
+      tags:
+        - 3. Transfer image
   /transfer:
     post:
       summary: transfer
-      tags:
-        - ' service'
       responses: {}
       operationId: transfer
       requestBody:
@@ -474,11 +482,11 @@ paths:
               required:
                 - service
                 - Items
+      tags:
+        - 3. Transfer image
   /retransfer:
     post:
       summary: retransfer
-      tags:
-        - ' service'
       responses: {}
       operationId: retransfer
       requestBody:
@@ -491,6 +499,8 @@ paths:
                   type: string
               required:
                 - service
+      tags:
+        - 3. Transfer image
   /getAddressList:
     get:
       summary: ''
@@ -514,12 +524,10 @@ paths:
                       - name: string
                         email: string
       tags:
-        - email
+        - 4. Send image
   /addAddress:
     post:
       summary: addAddress
-      tags:
-        - email
       responses: {}
       operationId: addAddress
       description: Add address. Return error (ERR_ITEM_EXISTED) if the email is existed.
@@ -534,11 +542,11 @@ paths:
                   name: kawazome
                   email: kawazome@gmail.com
         description: ''
+      tags:
+        - 4. Send image
   /setAddress:
     post:
       summary: setAddress
-      tags:
-        - email
       responses: {}
       operationId: setAddress
       description: Update address. Return error (ERR_ITEM_NOT_FOUND) if the email is not existed.
@@ -549,11 +557,11 @@ paths:
               $ref: '#/components/schemas/email'
             examples: {}
         description: ''
+      tags:
+        - 4. Send image
   /removeAddress:
     post:
       summary: removeAddress
-      tags:
-        - email
       responses: {}
       operationId: removeAddress
       requestBody:
@@ -561,11 +569,11 @@ paths:
           application/json:
             schema:
               $ref: '#/components/schemas/email'
+      tags:
+        - 4. Send image
   /sendFile:
     post:
       summary: sendFile
-      tags:
-        - email
       responses: {}
       operationId: sendFile
       requestBody:
@@ -582,11 +590,11 @@ paths:
                   type: array
                   items:
                     type: string
+      tags:
+        - 4. Send image
   /receiveFileList:
     post:
       summary: receiveFileList
-      tags:
-        - email
       responses:
         '200':
           description: OK
@@ -615,11 +623,11 @@ paths:
                 sendId:
                   type: string
         description: client received from an URL
+      tags:
+        - 4. Send image
   /receiveFile:
     post:
       summary: receiveFile
-      tags:
-        - email
       responses: {}
       operationId: receiveFile
       requestBody:
@@ -631,11 +639,11 @@ paths:
                 sendId:
                   type: string
         description: client received from an URL
+      tags:
+        - 4. Send image
   /setStoreTime:
     post:
       summary: setStoreTime
-      tags:
-        - storage
       responses: {}
       operationId: setStoreTime
       requestBody:
@@ -653,11 +661,11 @@ paths:
               required:
                 - Items
                 - storage
+      tags:
+        - 5. Manage image
   /getStorageSize:
     get:
       summary: getStorageSize
-      tags:
-        - storage
       responses:
         '200':
           description: OK
@@ -674,11 +682,11 @@ paths:
                   - totalSize
                   - usedSize
       operationId: getStorageSize
+      tags:
+        - 5. Manage image
   /addAlbum:
     post:
       summary: addAlbum
-      tags:
-        - album
       responses:
         '200':
           description: OK
@@ -723,11 +731,11 @@ paths:
                 value:
                   name: 2020 summer
                   description: Memories of summer vacation in 2020
+      tags:
+        - 6. Album
   /removeAlbum:
     post:
       summary: removeAlbum
-      tags:
-        - album
       responses: {}
       operationId: removeAlbum
       requestBody:
@@ -740,11 +748,11 @@ paths:
                   type: string
               required:
                 - value
+      tags:
+        - 6. Album
   /renameAlbum:
     post:
       summary: renameAlbum
-      tags:
-        - album
       responses: {}
       operationId: renameAlbum
       requestBody:
@@ -763,11 +771,11 @@ paths:
                 - name
                 - description
                 - value
+      tags:
+        - 6. Album
   /addAlbumImage:
     post:
       summary: addAlbumImage
-      tags:
-        - album
       responses: {}
       operationId: addAlbumImage
       requestBody:
@@ -794,11 +802,11 @@ paths:
                   Items:
                     - image#1266302616#57af6e07-e4a7-4b88-a398-6f929a68acc6
                     - image#1266302512#420ddbd3-214c-4567-b361-188b6e874fd9
+      tags:
+        - 6. Album
   /removeAlbumImage:
     post:
       summary: removeAlbumImage
-      tags:
-        - album
       responses: {}
       operationId: removeAlbumImage
       requestBody:
@@ -817,11 +825,11 @@ paths:
               required:
                 - value
                 - Items
+      tags:
+        - 6. Album
   /refreshToken:
     post:
       summary: refreshToken
-      tags:
-        - auth
       responses:
         '200':
           description: OK
@@ -852,11 +860,11 @@ paths:
               required:
                 - idToken
                 - nonce
+      tags:
+        - 7. Register/Authenticate user
   /getUserProfileAndLastDevice:
     post:
       summary: getUserProfileAndLastDevice
-      tags:
-        - auth
       responses:
         '200':
           description: OK
@@ -937,6 +945,8 @@ paths:
                         productId: string
       operationId: getUserProfileAndLastDevice
       description: ''
+      tags:
+        - 7. Register/Authenticate user
 components:
   schemas:
     bucket:
@@ -1168,11 +1178,10 @@ components:
         - serialNumber
         - productId
 tags:
-  - name: email
-  - name: album
-  - name: image
-  - name: ' service'
-  - name: bucket
-  - name: token
-  - name: auth
-  - name: storage
+  - name: 1. View image
+  - name: 2. Upload image
+  - name: 3. Transfer image
+  - name: 4. Send image
+  - name: 5. Manage image
+  - name: 6. Album
+  - name: 7. Register/Authenticate user
