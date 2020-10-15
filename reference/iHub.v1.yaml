@@ -154,8 +154,8 @@ paths:
                   size:
                     type: integer
                 required:
-                  - LastEvaluatedKey
                   - Count
+                  - size
               examples:
                 example-1:
                   value:
@@ -173,6 +173,7 @@ paths:
                   type: string
                 filterValue1:
                   type: string
+                  description: when filterName1 is “all” this value is ignored
                 filterName2:
                   type: string
                 filterValue2:
@@ -181,13 +182,14 @@ paths:
                   type: string
                 operation:
                   type: string
+                  description: |-
+                    delete |send| transferGoogle | transferFlickr | transferYouTube | storage |
+                    albumAdd | albumRemove
               required:
                 - filterName1
                 - filterValue1
-                - filterName2
-                - filterValue2
             examples:
-              example-1:
+              example:
                 value:
                   filterName1: string
                   filterValue1: string
@@ -197,6 +199,7 @@ paths:
                   operation: string
       tags:
         - 1. View image
+      description: Client need to repeat call this API until “LastEvaluatedKey” in output is undefined.
   /processAllFile:
     post:
       summary: processAllFile
