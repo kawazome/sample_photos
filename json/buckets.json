@@ -1,7 +1,0 @@
-{
-    "region": "cn-north-1",
-    "middle":{"bucket":"ihubtest", "keybase": "thumb/user1"},
-    "extra_large": {"bucket":"ihubtest", "keybase": "norm /user1"},
-    "original": {"bucket":"ihubtest", "keybase": "orig/user1"},
-    "exif": {"bucket":"ihubtest", "keybase": "exif/user1"},
-}
