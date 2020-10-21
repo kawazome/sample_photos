@@ -407,12 +407,40 @@ paths:
                       expired:
                         type: boolean
               examples:
-                example-1:
+                google drive:
+                  value:
+                    info:
+                      autotransfer: false
+                      failedCount: 3
+                      expired: false
+                      userName: Kawazome Takeshi
+                      userEmail: kawazome@gmail.com
+                flickr:
                   value:
                     info:
                       autotransfer: true
                       failedCount: 0
                       expired: true
+                youtube:
+                  value:
+                    info:
+                      autotransfer: false
+                      failedCount: 0
+                      expired: true
+                lightroom:
+                  value:
+                    info:
+                      autotransfer: false
+                      failedCount: 0
+                      expired: true
+                google photos:
+                  value:
+                    info:
+                      autotransfer: true
+                      failedCount: 0
+                      expired: false
+                      userName: Kawazome Takeshi
+                      userEmail: kawazome@gmail.com
       operationId: getServiceInfo
       requestBody:
         content:
@@ -424,6 +452,22 @@ paths:
                   type: string
               required:
                 - service
+            examples:
+              google drive:
+                value:
+                  service: Googledrive
+              flickr:
+                value:
+                  service: Flickr
+              youtube:
+                value:
+                  service: Youtubelive
+              google photos:
+                value:
+                  service: Googlephotos
+              lightroom:
+                value:
+                  service: Lightroom
         description: ''
       tags:
         - 3. Transfer image
