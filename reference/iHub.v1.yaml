@@ -102,7 +102,7 @@ paths:
         - 1. View image
   /getFilter:
     post:
-      summary: getfilter
+      summary: getFilter
       responses:
         '200':
           description: OK
@@ -116,13 +116,43 @@ paths:
                     items:
                       $ref: '#/components/schemas/filterItem'
               examples:
-                example:
+                get address:
                   value:
                     Items:
                       - name: Kawazome
                         value: kawazome@gmail.com
                       - name: Taro
                         value: tarotanaka@gmail.com
+                get camera:
+                  value:
+                    Items:
+                      - name: EOS R5
+                        value: e2b28658-df13-439d-9418-3ec8a32fc0dc
+                        serialNumber: '6181400000505'
+                        macAddress: f78c89a98b2
+                        registrationDateTime: 1543974554
+                        productName: Canon EOS R5
+                      - name: EOS M6 II
+                        value: da910bad-b28a-432a-8680-ae117a8d69a5
+                        serialNumber: '6181400000305'
+                        macAddress: f78c89a98b2
+                        registrationDateTime: 1543594554
+                        productName: Canon EOS M6 Mark II
+                      - name: PowerShot G7X III
+                        value: 7c4cfa89-ec80-482f-8cb0-6c5b59c82e06
+                        serialNumber: '6181400000105'
+                        macAddress: f78c89a98b2
+                        registrationDateTime: 1543534554
+                        productName: Canon PowerShot G7 X Mark III
+                get album:
+                  value:
+                    Items:
+                      - name: X'mas 2019
+                        value: ' sdertr34gtrgtr84'
+                        description: This is an album
+                      - name: Summer vacation 2020
+                        value: ' sdertr34gtrgtr82'
+                        description: This is another album
       operationId: getFilter
       requestBody:
         content:
@@ -130,9 +160,15 @@ paths:
             schema:
               $ref: '#/components/schemas/filterName'
             examples:
-              example:
+              get address:
                 value:
                   filterName1: address
+              get camera:
+                value:
+                  filterName1: camera
+              get album:
+                value:
+                  filterName1: album
         description: ''
       tags:
         - 1. View image
