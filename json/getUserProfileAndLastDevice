@@ -13,13 +13,31 @@
   "agreement_date": "2019-06-13T09:23:13Z", 
   "products": [
     {
-      method: 'none',
-      connect_guide: 'none',
-      upload_guide: 'none',
-      registeredDate: '2019-09-29T10:51:27Z', 
-      productName: 'PowerShot S90', 
-      serialNumber: '9168004697',
-      productId: 'powershot%20s90' 
+      "method": "email",
+      "connect_guide": "camera-email-d.html",
+      "upload_guide": "auto-upload.html",
+      "registeredDate": "2019-09-29T10:51:27Z", 
+      "productName": "EOS R5", 
+      "serialNumber": "6181400000505",
+      "productId": "eos%20r5" 
+    },
+    {
+      "method": "email",
+      "connect_guide": "camera-email-b.html",
+      "upload_guide": "select-upload-c.html",
+      "registeredDate": "2019-09-29T10:51:27Z", 
+      "productName": "EOS M6 Mark II", 
+      "serialNumber": "6181400000305",
+      "productId": "eos%20m6%20mark%20ii"
+    },
+    {
+      "method": "email",
+      "connect_guide": "camera-email-a.html",
+      "upload_guide": "select-upload-b.html",
+      "registeredDate": "2019-09-29T10:51:27Z", 
+      "productName": "PowerShot G7 X Mark III", 
+      "serialNumber": "6181400000105",
+      "productId": "powershot%20g7%20x%20mark%20iii"
     }
   ] 
 }
