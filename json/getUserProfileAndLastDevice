@@ -1,16 +1,16 @@
 {
-  "sub": "5040df92-7e9a-41d1-80d1-6b868a3f9151", 
+  "sub": "5040df92-7e9a-41d1-80d1-6b868a3f9151",
   "given_name": "Takeshi",
   "family_name": "Kawazome",
   "email": "kawazome@gmail.com",
   "email_verified": true,
   "locale": "ja-JP",
-  "registered_date": "2019-06-13T09:23:13Z", 
+  "registered_date": "2019-06-13T09:23:13Z",
   "address": { "country": "GB" },
-  "registration_client_id": "27b2f11f-1aea-4857-91be-995c6b408649", 
+  "registration_client_id": "27b2f11f-1aea-4857-91be-995c6b408649",
   "state": ["READY","SOCIAL_UNSET" ],
-  "agreement_version": "1.00", 
-  "agreement_date": "2019-06-13T09:23:13Z", 
+  "agreement_version": "1.00",
+  "agreement_date": "2019-06-13T09:23:13Z",
   "products": [
     {
       "method": "email",
