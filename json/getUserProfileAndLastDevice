@@ -1,7 +1,7 @@
 {
   "sub": "5040df92-7e9a-41d1-80d1-6b868a3f9151",
-  "given_name": "Takeshi",
-  "family_name": "Kawazome",
+  "given_name":"Takeshi",
+  "family_name":"Kawazome",
   "email": "kawazome@gmail.com",
   "email_verified": true,
   "locale": "ja-JP",
@@ -19,7 +19,7 @@
       "registeredDate": "2019-09-29T10:51:27Z", 
       "productName": "EOS R5", 
       "serialNumber": "6181400000505",
-      "productId": "eos%20r5" 
+      "productId": "eos%20r6" 
     },
     {
       "method": "email",
