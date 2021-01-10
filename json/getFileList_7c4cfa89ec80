@@ -43,29 +43,7 @@
       "contentLength": 454765,
       "playTime": 0,
       "datePath": "20200701/15"
-    },
-    {
-      "imageId": "707c1ad3-4adb-4deb-82f1-193d7f6912e5",
-      "sourceDevice": "7c4cfa89ec80",
-      "extName": "jpg",
-      "shootingTime": 1087633705,
-      "uploadingTime": 1594038422,
-      "leftDay": -1,
-      "contentLength": 454765,
-      "playTime": 0,
-      "datePath": "20200701/15"
-    },
-    {
-      "imageId": "d4e84973-7e9c-4b4e-9e59-17eed7022486",
-      "sourceDevice": "7c4cfa89ec80",
-      "extName": "jpg",
-      "shootingTime": 1085816445,
-      "uploadingTime": 1593952022,
-      "leftDay": 0,
-      "contentLength": 454765,
-      "playTime": 0,
-      "datePath": "20200701/15"
     }
   ],
-  "Count": 6
+  "Count": 4
 }
